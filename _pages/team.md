@@ -1,123 +1,117 @@
 ---
 title: "Team"
-layout: gridlay
+layout: homelay
 sitemap: false
 permalink: /team/
 ---
 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/team.css">
+
+<div class="team-wrap">
+
 ## Team
 
-**We are looking for new team members** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
-
-## PI
-
-{% for member in site.data.pi %}
-
-<div class="jumbotron">
-<div class="row">
-<div class="col-sm-2">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" width="100%" style="max-width:250px"/>
-</div>
-<div class="col-sm-9 col-xs-12">
-<h4>{{ member.name }}</h4>
-<i>{{ member.info }}</i><br>
-
-{% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %} {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %} {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %} {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %} {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %} {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
-
-<ul style="overflow: hidden">
-<li> {{ member.education[0] }} </li>
-<li> {{ member.education[1] }} </li>
-</ul>
-</div>
-</div>
+<div class="alert alert-info" style="border-radius:16px;">
+  <strong>We are looking for new members!</strong>
+  <a href="{{ site.baseurl }}/vacancies">See openings</a>.
 </div>
 
+### Faculty Advisor
+
+<div class="team-grid">
+{% for member in site.data.faculty_advisor %}
+  <div class="team-card">
+    <div class="team-card-top">
+      <img class="team-avatar" src="{{ site.baseurl }}/images/{{ member.photo }}" alt="{{ member.name }}">
+      <div>
+        <p class="team-name">{{ member.name }}</p>
+        <p class="team-role">{{ member.info }}</p>
+      </div>
+    </div>
+
+    {% if member.education %}
+    <div class="team-meta">
+      {% for item in member.education %}
+        <div>• {{ item }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="team-links">
+      {% if member.website and member.website != "" %}
+        <a href="{{ member.website }}" target="_blank" aria-label="Website"><i class="fa fa-home fa-lg"></i></a>
+      {% endif %}
+      {% if member.email and member.email != "" %}
+        <a href="mailto:{{ member.email }}" aria-label="Email"><i class="fa fa-envelope fa-lg"></i></a>
+      {% endif %}
+    </div>
+  </div>
 {% endfor %}
-
-## Current Board Members
-
-<div class='jumbotron'>
-{% assign number_printed = 0 %}
-{% for member in site.data.team_members %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-
-<div class="row">
-{% endif %}
-
-<div class="col-sm-2">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" width="100%" style="max-width:250px"/>
 </div>
-<div class="col-sm-4 col-xs-12">
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }}<br></i>
 
-{% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
-{% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-{% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
-{% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %}
-{% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
-{% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
+### Board
 
-</div>
-<!-- </div> -->
+<div class="team-grid">
+{% for member in site.data.people %}
+  <div class="team-card">
+    <div class="team-card-top">
+      <img class="team-avatar" src="{{ site.baseurl }}/images/{{ member.photo }}" alt="{{ member.name }}">
+      <div>
+        <p class="team-name">{{ member.name }}</p>
+        <p class="team-role">{{ member.position }}</p>
+      </div>
+    </div>
 
-{% assign number_printed = number_printed | plus: 1 %}
+    <div class="team-meta">
+      {% if member.degree and member.degree != "" %}
+        <div><strong>Degree:</strong> {{ member.degree }}</div>
+      {% endif %}
+      {% if member.active_years and member.active_years != "" %}
+        <div><strong>Active since:</strong> {{ member.active_years }}</div>
+      {% endif %}
+      {% if member.info and member.info != "" %}
+        <div style="margin-top:6px;">{{ member.info }}</div>
+      {% endif %}
+    </div>
 
-{% if even_odd == 1 %}
-
-</div>
-{% endif %}
-
+    <div class="team-links">
+      {% if member.website and member.website != "" %}
+        <a href="{{ member.website }}" target="_blank" aria-label="Website"><i class="fa fa-home fa-lg"></i></a>
+      {% endif %}
+      {% if member.email and member.email != "" %}
+        <a href="mailto:{{ member.email }}" aria-label="Email"><i class="fa fa-envelope fa-lg"></i></a>
+      {% endif %}
+      {% if member.github and member.github != "" %}
+        <a href="{{ member.github }}" target="_blank" aria-label="GitHub"><i class="fa fa-github fa-lg"></i></a>
+      {% endif %}
+      {% if member.linkedin and member.linkedin != "" %}
+        <a href="{{ member.linkedin }}" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a>
+      {% endif %}
+    </div>
+  </div>
 {% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-
-</div>
-{% endif %}
 </div>
 
-## Alumni
+### Alumni
 
-<div class="jumbotron">
-{% assign number_printed = 0 %}
+<div class="team-grid">
 {% for member in site.data.alumni %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-
-<div class="row">
-{% endif %}
-
-<div class="col-sm-2">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" width="100%" style="max-width:250px"/>
-</div>
-<div class="col-sm-4 col-xs-12">
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.duration }} <br> Role: {{ member.info }}</i>
-  <ul style="overflow: hidden">
-  </ul>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-
-</div>
-{% endif %}
+  <div class="team-card">
+    <div class="team-card-top">
+      <img class="team-avatar" src="{{ site.baseurl }}/images/{{ member.photo }}" alt="{{ member.name }}">
+      <div>
+        <p class="team-name">{{ member.name }}</p>
+        <p class="team-role">{{ member.info }}</p>
+      </div>
+    </div>
+  </div>
 {% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-
-</div>
-{% endif %}
 </div>
 
-## Administrative Support
+### Contact
 
-<a href="exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration.
+<div class="alert alert-secondary" style="border-radius:16px;">
+  Email us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+</div>
+
+</div>
