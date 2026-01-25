@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("theme-toggle");
-  if (!toggle) {
-    console.warn("Theme toggle button not found");
-    return;
-  }
+  if (!toggle) return;
 
-  const root = document.documentElement;
+  const root = document.body;
 
   // Load saved theme or default to dark
   const savedTheme = localStorage.getItem("theme") || "dark";
