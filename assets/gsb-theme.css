@@ -1,8 +1,9 @@
 /* =========================================================
-   IEEE GSB @ OSU theme
+   IEEE GSB @ OSU THEME
    Scarlet + gray + subtle IEEE blue
-   Light / Dark mode enabled (FORCED)
+   Fully light / dark mode compatible
    ========================================================= */
+
 
 /* =========================================================
    THEME VARIABLES
@@ -15,17 +16,17 @@
   --osu-scarlet-dark: #8A0000;
   --ieee-blue: #00629B;
 
-  /* Surfaces */
+  /* Backgrounds */
   --bg: #1B1B1B;
   --surface: #202020;
   --surface-2: #262626;
 
   /* Text */
-  --text: rgba(255,255,255,0.92);
-  --text-muted: rgba(255,255,255,0.72);
+  --text: rgba(255, 255, 255, 0.92);
+  --text-muted: rgba(255, 255, 255, 0.72);
 
   /* Borders */
-  --border: rgba(255,255,255,0.12);
+  --border: rgba(255, 255, 255, 0.12);
 
   /* Links */
   --link: var(--ieee-blue);
@@ -41,11 +42,12 @@
   --text: #1B1B1B;
   --text-muted: #444444;
 
-  --border: rgba(0,0,0,0.12);
+  --border: rgba(0, 0, 0, 0.12);
 }
 
+
 /* =========================================================
-   FORCE THEME TO WIN (IMPORTANT)
+   BASE
    ========================================================= */
 
 html,
@@ -60,23 +62,29 @@ li {
   line-height: 1.65;
 }
 
+
 /* =========================================================
    HEADINGS
    ========================================================= */
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: var(--text) !important;
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {
   margin-top: 1.8rem;
   padding-bottom: 0.35rem;
-  border-bottom: 2px solid rgba(187,0,0,0.35);
+  border-bottom: 2px solid rgba(187, 0, 0, 0.35);
 }
+
 
 /* =========================================================
    LINKS
@@ -93,8 +101,9 @@ a:focus {
   color: var(--link-hover);
 }
 
+
 /* =========================================================
-   NAVBAR (OVERRIDE BOOTSTRAP)
+   NAVBAR
    ========================================================= */
 
 .navbar {
@@ -117,6 +126,7 @@ a:focus {
   color: var(--text) !important;
 }
 
+
 /* =========================================================
    LAYOUT
    ========================================================= */
@@ -126,18 +136,79 @@ a:focus {
   max-width: 1100px;
 }
 
+
 /* =========================================================
-   CARDS / PANELS / WELLS
+   HERO SECTION
+   ========================================================= */
+
+.gsb-accent-bar {
+  height: 6px;
+  width: 80px;
+  background: var(--osu-scarlet);
+  margin: 24px 0 32px 0;
+  border-radius: 4px;
+}
+
+.gsb-hero {
+  background: linear-gradient(
+    180deg,
+    var(--surface) 0%,
+    var(--surface-2) 100%
+  );
+  padding: 48px 32px;
+  border-radius: 16px;
+  margin-bottom: 56px;
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+
+.gsb-hero-logos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.gsb-logo {
+  height: 120px;
+}
+
+.gsb-hero-title {
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.gsb-hero-text {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   CARDS
    ========================================================= */
 
 .card,
 .panel,
-.well,
-.team-card {
+.well {
   background-color: var(--surface) !important;
   border: 1px solid var(--border) !important;
   border-radius: 12px !important;
 }
+
+.gsb-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.gsb-card {
+  padding: 24px;
+}
+
 
 /* =========================================================
    BUTTONS
@@ -166,6 +237,7 @@ a:focus {
   color: var(--text) !important;
 }
 
+
 /* =========================================================
    FOOTER
    ========================================================= */
@@ -187,6 +259,7 @@ footer a:hover,
   color: var(--osu-scarlet);
 }
 
+
 /* =========================================================
    UTILITIES
    ========================================================= */
@@ -198,6 +271,7 @@ footer a:hover,
 .gsb-accent-ieee {
   color: var(--ieee-blue) !important;
 }
+
 
 /* =========================================================
    TEAM GRID
@@ -211,11 +285,22 @@ footer a:hover,
 }
 
 @media (max-width: 991px) {
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 575px) {
-  .team-grid { grid-template-columns: 1fr; }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
 }
 
 .team-avatar {
