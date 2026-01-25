@@ -98,7 +98,3 @@ You can get involved by:
 
 ---
 
-## Stay Connected
-
-- 📧 **Email:** ieee.gsb@osu.edu  
-- 💻 **GitHub:** https://github.com/ieeegsbosu
