@@ -4,6 +4,7 @@ layout: page
 permalink: /
 ---
 
+{::nomarkdown}
 <!-- OSU scarlet accent bar -->
 <div style="
   height: 6px;
@@ -20,7 +21,6 @@ permalink: /
   border-radius: 16px;
   margin-bottom: 56px;
 ">
-
 
   <div style="
     display:flex;
@@ -40,8 +40,6 @@ permalink: /
   
   </div>
 
-
-
   <h1 style="text-align:center;">
     IEEE Graduate Student Branch <span class="gsb-accent">@ Ohio State</span>
   </h1>
@@ -59,10 +57,11 @@ permalink: /
   </p>
 
 </div>
+{:/nomarkdown}
 
-<!-- WHAT WE DO -->
 ## What We Do
 
+{::nomarkdown}
 <div style="
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
@@ -71,26 +70,26 @@ permalink: /
 ">
 
 <div class="card" style="padding:24px;">
-### Technical Events
+<h3>Technical Events</h3>
 Workshops, seminars, and invited talks covering emerging technologies,
 research topics, and applied engineering practice.
 </div>
 
 <div class="card" style="padding:24px;">
-### Professional Development
+<h3>Professional Development</h3>
 Career panels, resume reviews, and industry engagement tailored specifically
 for graduate students.
 </div>
 
 <div class="card" style="padding:24px;">
-### Community & Leadership
+<h3>Community & Leadership</h3>
 Opportunities to lead initiatives, collaborate across disciplines, and build
 a strong graduate engineering community.
 </div>
 
 </div>
+{:/nomarkdown}
 
-<!-- GET INVOLVED -->
 ## Get Involved
 
 IEEE GSB is open to **all graduate students at Ohio State** with interests in
@@ -104,7 +103,6 @@ You can get involved by:
 
 ---
 
-<!-- UPCOMING EVENTS -->
 ## Upcoming Events
 
 - Event details coming soon  
@@ -112,11 +110,7 @@ You can get involved by:
 
 ---
 
-<!-- CALL TO ACTION -->
 ## Stay Connected
-
-Stay up to date with our events, opportunities, and announcements.
 
 - 📧 **Email:** ieee.gsb@osu.edu  
 - 💻 **GitHub:** https://github.com/ieeegsbosu  
-
