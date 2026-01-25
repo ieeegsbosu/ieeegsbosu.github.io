@@ -7,6 +7,70 @@ show_title: false
 
 {::nomarkdown}
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* ===============================
+     Scroll fade-in animation
+  =============================== */
+  const people = document.querySelectorAll(".person");
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const delay = el.getAttribute("data-delay") || "0ms";
+          el.style.animation = `fadeUp 520ms ease-out ${delay} forwards`;
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    people.forEach((el) => observer.observe(el));
+  } else {
+    people.forEach((el) => {
+      el.style.opacity = 1;
+      el.style.transform = "translateY(0)";
+    });
+  }
+
+  /* ===============================
+     Board member rotation
+     (first .people-grid only)
+  =============================== */
+  const boardGrid = document.querySelector(".people-grid");
+  if (!boardGrid) return;
+
+  let items = Array.from(boardGrid.children);
+
+  function shuffle(array) {
+    const arr = array.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function rotateBoard() {
+    boardGrid.style.opacity = 0;
+    boardGrid.style.transform = "translateY(8px)";
+
+    setTimeout(() => {
+      const shuffled = shuffle(items);
+      boardGrid.innerHTML = "";
+      shuffled.forEach(el => boardGrid.appendChild(el));
+
+      boardGrid.style.opacity = 1;
+      boardGrid.style.transform = "translateY(0)";
+    }, 350);
+  }
+
+  setInterval(rotateBoard, 6000);
+});
+</script>
+
 <!-- Use same accent bar class as Home -->
 <div class="gsb-accent-bar"></div>
 
