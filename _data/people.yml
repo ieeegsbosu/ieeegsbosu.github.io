@@ -3,7 +3,25 @@
   photo: "srinivasan.jpg"
   description: "Srini is a fifth year PhD student at OSU"
 
-- name: "Member 2"
+- name: "Julio Rodriguez "
+  position: "Joint Secretary and Social Media Chair"
+  photo: "julio.png"
+  description: "Julio is a second year PhD student at OSU"
+
+- name: "Ashutosh Soni"
+  position: "Preisdent"
+  photo: "soni.jpg"
+  description: "Ashutosh is a fourth year PhD student at OSU"
+
+- name: "Shrivatch Sankar"
+  position: "Event Coordinator"
+  photo: "srivatch.jpg"
+  description: "Shrivatch is a third year PhD student at OSU"
+
+- name: "Siddhi Nasare"
   position: "Vice President"
-  photo: "member2.jpg"
-  description: "Short description about what they do."
+  photo: "siddhi.jpg"
+  description: "Siddhi is a second year Masters student at OSU"
+
+
+
