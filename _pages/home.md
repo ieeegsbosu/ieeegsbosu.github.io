@@ -6,51 +6,34 @@ show_title: false
 ---
 
 {::nomarkdown}
+
 <!-- OSU scarlet accent bar -->
-<div style="
-  height: 6px;
-  width: 80px;
-  background: #BB0000;
-  margin: 24px 0 32px 0;
-  border-radius: 4px;">
-</div>
+<div class="gsb-accent-bar"></div>
 
 <!-- HERO SECTION -->
-<div style="
-  background: linear-gradient(180deg, #1b1b1b 0%, #202020 100%);
-  padding: 48px 32px;
-  border-radius: 16px;
-  margin-bottom: 56px;
-">
+<div class="gsb-hero">
 
-  <div style="
-    display:flex;
-    justify-content:center;
-    gap:60px;
-    margin-bottom:40px;
-    flex-wrap:wrap;
-  ">
-  
-    <img src="/images/The_Ohio_State_University_Logo.jpg"
-         alt="The Ohio State University Logo"
-         style="height:120px;">
-  
-    <img src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png"
-         alt="IEEE Graduate Student Body Logo"
-         style="height:120px;">
-  
+  <!-- Logos -->
+  <div class="gsb-hero-logos">
+    <img
+      src="/images/The_Ohio_State_University_Logo.jpg"
+      alt="The Ohio State University Logo"
+      class="gsb-logo">
+
+    <img
+      src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png"
+      alt="IEEE Graduate Student Body Logo"
+      class="gsb-logo">
   </div>
 
-  <h1 style="text-align:center;">
-    IEEE Graduate Student Branch <span class="gsb-accent">@ Ohio State</span>
+  <!-- Title -->
+  <h1 class="gsb-hero-title">
+    IEEE Graduate Student Branch
+    <span class="gsb-accent">@ Ohio State</span>
   </h1>
 
-  <p style="
-    max-width:780px;
-    margin:24px auto 0 auto;
-    text-align:center;
-    font-size:1.1rem;
-  ">
+  <!-- Description -->
+  <p class="gsb-hero-text">
     The <strong>IEEE Graduate Student Branch (GSB)</strong> at
     <strong>The Ohio State University</strong> is a graduate-led organization
     dedicated to fostering technical excellence, leadership, and professional
@@ -58,37 +41,41 @@ show_title: false
   </p>
 
 </div>
+
 {:/nomarkdown}
 
 ## What We Do
 
 {::nomarkdown}
-<div style="
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:24px;
-  margin-top:24px;
-">
 
-<div class="card" style="padding:24px;">
-<h3>Technical Events</h3>
-Workshops, seminars, and invited talks covering emerging technologies,
-research topics, and applied engineering practice.
+<div class="gsb-cards">
+
+  <div class="card gsb-card">
+    <h3>Technical Events</h3>
+    <p>
+      Workshops, seminars, and invited talks covering emerging technologies,
+      research topics, and applied engineering practice.
+    </p>
+  </div>
+
+  <div class="card gsb-card">
+    <h3>Professional Development</h3>
+    <p>
+      Career panels, resume reviews, and industry engagement tailored
+      specifically for graduate students.
+    </p>
+  </div>
+
+  <div class="card gsb-card">
+    <h3>Community & Leadership</h3>
+    <p>
+      Opportunities to lead initiatives, collaborate across disciplines,
+      and build a strong graduate engineering community.
+    </p>
+  </div>
+
 </div>
 
-<div class="card" style="padding:24px;">
-<h3>Professional Development</h3>
-Career panels, resume reviews, and industry engagement tailored specifically
-for graduate students.
-</div>
-
-<div class="card" style="padding:24px;">
-<h3>Community & Leadership</h3>
-Opportunities to lead initiatives, collaborate across disciplines, and build
-a strong graduate engineering community.
-</div>
-
-</div>
 {:/nomarkdown}
 
 ## Get Involved
@@ -114,4 +101,4 @@ You can get involved by:
 ## Stay Connected
 
 - 📧 **Email:** ieee.gsb@osu.edu  
-- 💻 **GitHub:** https://github.com/ieeegsbosu  
+- 💻 **GitHub:** https://github.com/ieeegsbosu
