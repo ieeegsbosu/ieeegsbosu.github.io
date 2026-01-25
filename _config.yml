@@ -1,40 +1,35 @@
 # Site settings
-title: Richard Feynman
-email: richard@university.edu
-description: Academic webpage of Dr. Richard Feynman
-baseurl: ""
-url: ""
+title: IEEE Graduate Student Branch (GSB) @ The Ohio State University
+email: ieee.gsb@osu.edu
+description: IEEE Graduate Student Branch at The Ohio State University
+baseurl: ""   # keep "" for user/organization pages, set "/repo-name" if using a project page
+url: "https://ieeegsbosu.github.io"  # update if your GitHub Pages URL differs
 
-# Google analytics ID: Uncomment and your own, if you like
+# Google analytics ID: Uncomment and add your own if you like
 # google_analytics: XX
-# google_analytics_4: XXX
-# google_tag_manager: XXX
+# google_analytics_4: G-XXXXXXXXXX
+# google_tag_manager: GTM-XXXXXXX
 
 # Footer info
 affiliation: >
-  Richard Feynman<br/>
-  Professor of Physics<br/>
-  California Institute of Technology
+  IEEE Graduate Student Branch (GSB)<br/>
+  The Ohio State University<br/>
+  IEEE Student Activities
 
 location: >
-  California Institute of Technology<br/>
-  1200 E California Blvd<br/>
-  Pasadena, CA 91125
+  The Ohio State University<br/>
+  Columbus, OH, USA
 
 contact: >
-  <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
-  <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+  <a href="mailto:ieee.gsb@osu.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact IEEE GSB via email</a> <br/>
+  <a href="https://github.com/ieeegsbosu/website"><i class="fa fa-github fa-1x"></i> GitHub Repository</a>
 
 # Pages shown in navbar
+# NOTE: these names must match markdown files in _pages/ (e.g., _pages/about.md => "about")
 nav_pages:
+  - name: home
   - name: about
-  - name: publications
-  - name: talks
-  - name: research
-  - name: software
-  - name: team
-  - name: teaching
-  - name: blogs
+  - name: people
 
 include:
   - .htaccess
@@ -57,13 +52,17 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+  parse_block_html: true
 
+# Plugins
+# You can keep scholar enabled, but it isn't needed for Home/About/People.
+# If GitHub Pages build fails due to plugins, comment this out and remove scholar block below.
 plugins: ["jekyll/scholar"]
 
+# Scholar (not used right now, but kept to avoid breaking template pages)
 scholar:
-  last_name: Doe
-  first_name: [John]
+  last_name: GSB
+  first_name: [IEEE]
 
   style: citesty
   locale: en
