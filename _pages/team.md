@@ -1,6 +1,6 @@
 ---
 title: "Team"
-layout: gridlay
+layout: homelay
 sitemap: false
 permalink: /team/
 ---
@@ -22,8 +22,12 @@ permalink: /team/
       <h4>{{ member.name }}</h4>
       <i>{{ member.info }}</i><br>
 
-      {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a>{% endif %}
-      {% if member.email %} <a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>{% endif %}
+      {% if member.website and member.website != "" %}
+        <a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a>
+      {% endif %}
+      {% if member.email and member.email != "" %}
+        <a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
+      {% endif %}
 
       {% if member.education %}
       <ul style="overflow: hidden">
@@ -56,11 +60,17 @@ permalink: /team/
     <div class="col-sm-4 col-xs-12">
       <h4>{{ member.name }}</h4>
       <i>{{ member.role }}</i><br>
-      {% if member.info %}<span>{{ member.info }}</span><br>{% endif %}
+      {% if member.info and member.info != "" %}<span>{{ member.info }}</span><br>{% endif %}
 
-      {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a>{% endif %}
-      {% if member.email %} <a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>{% endif %}
-      {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>{% endif %}
+      {% if member.website and member.website != "" %}
+        <a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a>
+      {% endif %}
+      {% if member.email and member.email != "" %}
+        <a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
+      {% endif %}
+      {% if member.github and member.github != "" %}
+        <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+      {% endif %}
     </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
