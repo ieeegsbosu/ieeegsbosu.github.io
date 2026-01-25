@@ -1,286 +1,241 @@
 /* =========================================================
-   IEEE GSB @ OSU theme overrides
+   IEEE GSB @ OSU theme
    Scarlet + gray + subtle IEEE blue
-   Drop-in CSS: assets/css/gsb-theme.css
+   Light / Dark mode enabled
    ========================================================= */
 
-/* Color system */
-:root{
+/* =========================================================
+   THEME VARIABLES
+   ========================================================= */
+
+/* DARK MODE (default) */
+:root {
+  /* OSU / IEEE brand */
   --osu-scarlet: #BB0000;
   --osu-scarlet-dark: #8A0000;
-  --osu-gray: #666666;
-  --osu-gray-2: #A7B1B7;
-  --osu-charcoal: #1B1B1B;
-  --osu-surface: #202020;
-  --osu-surface-2: #262626;
-  --osu-border: rgba(255,255,255,0.12);
-  --osu-text: rgba(255,255,255,0.92);
-  --osu-text-muted: rgba(255,255,255,0.72);
-
-  /* IEEE touch */
   --ieee-blue: #00629B;
 
-  /* Links: default IEEE-blue, hover scarlet */
+  /* Core surfaces */
+  --bg: #1B1B1B;
+  --surface: #202020;
+  --surface-2: #262626;
+
+  /* Text */
+  --text: rgba(255,255,255,0.92);
+  --text-muted: rgba(255,255,255,0.72);
+
+  /* Borders */
+  --border: rgba(255,255,255,0.12);
+
+  /* Links */
   --link: var(--ieee-blue);
   --link-hover: var(--osu-scarlet);
 }
 
-/* Base typography and background */
-html, body{
-  background: var(--osu-charcoal);
-  color: var(--osu-text);
+/* LIGHT MODE */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #f4f4f4;
+  --surface-2: #ffffff;
+
+  --text: #1B1B1B;
+  --text-muted: #444444;
+
+  --border: rgba(0,0,0,0.12);
 }
 
-body{
+/* =========================================================
+   BASE
+   ========================================================= */
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
   letter-spacing: 0.1px;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5{
-  color: var(--osu-text);
+p, li {
+  color: var(--text-muted);
+  line-height: 1.65;
 }
 
-h1{
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1, h2, h3, h4, h5 {
+  color: var(--text);
+}
+
+h1 {
   font-weight: 700;
 }
 
-h2{
+h2 {
   margin-top: 1.8rem;
   padding-bottom: 0.35rem;
   border-bottom: 2px solid rgba(187,0,0,0.35);
 }
 
-/* Links */
-a, a:visited{
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a, a:visited {
   color: var(--link);
   text-decoration: none;
 }
 
-a:hover, a:focus{
+a:hover, a:focus {
   color: var(--link-hover);
-  text-decoration: none;
 }
 
-/* Navbar */
-.navbar{
-  background: #151515 !important;
-  border-bottom: 1px solid var(--osu-border);
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar .navbar-brand,
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus{
-  color: var(--osu-text) !important;
+.navbar .navbar-brand:hover {
+  color: var(--text) !important;
   font-weight: 700;
 }
 
-.navbar .navbar-nav > li > a{
-  color: var(--osu-text-muted) !important;
+.navbar .navbar-nav > li > a {
+  color: var(--text-muted) !important;
   font-weight: 600;
 }
 
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus{
-  color: var(--osu-text) !important;
+.navbar .navbar-nav > li > a:hover {
+  color: var(--text) !important;
 }
 
-/* Active nav item indicator */
-.navbar .navbar-nav > .active > a,
-.navbar .navbar-nav > .active > a:hover,
-.navbar .navbar-nav > .active > a:focus{
-  color: var(--osu-text) !important;
-  background: transparent !important;
+.navbar .navbar-nav > .active > a {
   border-bottom: 2px solid var(--osu-scarlet);
 }
 
-/* Page content container tweaks */
-.container, .container-fluid{
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+
+.container, .container-fluid {
   max-width: 1100px;
 }
 
-/* Cards, panels, wells */
-.card, .panel, .well{
-  background: var(--osu-surface) !important;
-  border: 1px solid var(--osu-border) !important;
+/* =========================================================
+   CARDS / PANELS
+   ========================================================= */
+
+.card, .panel, .well {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
   border-radius: 12px !important;
   box-shadow: none !important;
 }
 
-/* Common boxed sections in this template */
-.section, .content, .post, .news, .sidebar, .profile{
-  border-radius: 12px;
-}
+/* =========================================================
+   BUTTONS
+   ========================================================= */
 
-/* Buttons */
-.btn{
+.btn {
   border-radius: 10px;
   font-weight: 700;
-  border: 1px solid transparent;
 }
 
-.btn-primary{
+.btn-primary {
   background: var(--osu-scarlet) !important;
   border-color: var(--osu-scarlet) !important;
   color: white !important;
 }
 
-.btn-primary:hover,
-.btn-primary:focus{
+.btn-primary:hover {
   background: var(--osu-scarlet-dark) !important;
   border-color: var(--osu-scarlet-dark) !important;
 }
 
-.btn-default, .btn-secondary{
+.btn-default, .btn-secondary {
   background: transparent !important;
-  border-color: rgba(255,255,255,0.25) !important;
-  color: var(--osu-text) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
 }
 
-.btn-default:hover, .btn-secondary:hover{
-  border-color: var(--osu-scarlet) !important;
-  color: var(--osu-text) !important;
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer, footer {
+  background: var(--bg) !important;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
 }
 
-/* Horizontal rules */
-hr{
-  border-top: 1px solid var(--osu-border);
-}
-
-/* Tables */
-table{
-  color: var(--osu-text);
-}
-table thead th{
-  border-bottom: 1px solid var(--osu-border) !important;
-}
-table tbody td{
-  border-top: 1px solid rgba(255,255,255,0.08) !important;
-}
-
-/* Footer */
-.footer, footer{
-  background: #141414 !important;
-  border-top: 1px solid var(--osu-border);
-  color: var(--osu-text-muted);
-}
-
-.footer a, footer a{
+.footer a {
   color: var(--ieee-blue);
 }
-.footer a:hover, footer a:hover{
+
+.footer a:hover {
   color: var(--osu-scarlet);
 }
 
-/* Accent utilities you can reuse in pages */
-.gsb-accent{
+/* =========================================================
+   UTILITIES
+   ========================================================= */
+
+.gsb-accent {
   color: var(--osu-scarlet) !important;
 }
-.gsb-accent-ieee{
+
+.gsb-accent-ieee {
   color: var(--ieee-blue) !important;
 }
 
-/* Home page logo polish (optional) */
-img{
+img {
   image-rendering: auto;
 }
 
-/* Make long text more readable on dark backgrounds */
-p, li{
-  color: var(--osu-text-muted);
-  line-height: 1.65;
-}
+/* =========================================================
+   TEAM GRID
+   ========================================================= */
 
-/* Reduce harshness on code blocks */
-pre, code{
-  background: var(--osu-surface-2) !important;
-  border: 1px solid var(--osu-border) !important;
-  color: var(--osu-text) !important;
-  border-radius: 10px;
-}
-.team-grid{
-  display:grid;
+.team-grid {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 14px;
-  margin-bottom: 10px;
 }
 
-@media (max-width: 991px){
-  .team-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 575px){
-  .team-grid{ grid-template-columns: 1fr; }
+@media (max-width: 991px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-.team-card{
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
+@media (max-width: 575px) {
+  .team-grid { grid-template-columns: 1fr; }
+}
+
+.team-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
-  overflow:hidden;
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
-.team-card:hover{
+.team-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(0,0,0,.26);
 }
 
-.team-card-top{
-  display:flex;
-  gap: 14px;
-  align-items:center;
-  padding: 18px 18px 10px 18px;
-}
-
-.team-avatar{
+.team-avatar {
   width: 74px;
   height: 74px;
   border-radius: 999px;
   object-fit: cover;
-  border: 2px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.08);
+  border: 2px solid var(--border);
 }
-
-.team-name{
-  font-weight: 800;
-  font-size: 1.05rem;
-  line-height: 1.1;
-}
-
-.team-role{
-  opacity: .9;
-  margin-top: 6px;
-}
-
-.team-meta{
-  padding: 0 18px 12px 18px;
-  opacity: .92;
-  font-size: .92rem;
-  line-height: 1.35;
-}
-
-.team-links{
-  padding: 0 18px 16px 18px;
-  display:flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.team-links a{
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.06);
-  text-decoration:none;
-}
-
-.team-links a:hover{
-  border-color: rgba(255,255,255,.28);
-  background: rgba(255,255,255,.10);
-}
-
