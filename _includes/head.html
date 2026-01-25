@@ -3,27 +3,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/gsb-theme.css' | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="shortcut icon" type ="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <title>
+    {% if page.title %}
+      {{ page.title | escape }} - {{ site.title | escape }}
+    {% else %}
+      {{ site.title | escape }}
+    {% endif %}
+  </title>
 
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Base styles (template + Bootstrap) -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <!-- GSB theme overrides (must load AFTER main.css) -->
+  <link rel="stylesheet" href="{{ '/assets/gsb-theme.css' | relative_url }}">
+
+  <!-- Canonical + favicon -->
+  <link rel="canonical"
+        href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon"
+        type="image/x-icon"
+        href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <!-- Performance hints -->
   <link rel="preconnect" href="https://player.vimeo.com">
   <link rel="preconnect" href="https://i.vimeocdn.com">
   <link rel="preconnect" href="https://f.vimeocdn.com">
 
+  <!-- Analytics (production only) -->
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
 
-{% if jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
+  <!-- MathJax (safe to keep) -->
+  {% include mathjax.html %}
 
-{% include mathjax.html %}
-
-<script src="{{ '/assets/javascript/theme-toggle.js' | relative_url }}"></script>
-
+  <!-- Theme toggle JS
+       NOTE: runs after DOMContentLoaded inside the script -->
+  <script src="{{ '/assets/javascript/theme-toggle.js' | relative_url }}"></script>
 </head>
-
