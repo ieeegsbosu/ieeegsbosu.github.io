@@ -18,7 +18,7 @@ show_title: true
 </div>
 
 <p class="team-intro">
-  Meet our board, faculty advisor, and alumni who support IEEE GSB at Ohio State.
+  Meet our board and faculty advisor who support IEEE GSB at Ohio State.
   <span class="team-intro-cta">
     <a href="{{ site.baseurl }}/vacancies"><u>New members welcome — see openings</u></a>.
   </span>
@@ -27,12 +27,11 @@ show_title: true
 <style>
 /* ===== Full-width feel ===== */
 .team-wrap{
-  max-width: 1400px;   /* was 1100px */
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 24px;     /* a bit more breathing room */
+  padding: 0 24px;
 }
 
-/* Intro */
 .team-intro{
   font-size: 1.25rem;
   line-height: 1.6;
@@ -53,11 +52,9 @@ show_title: true
 /* ===== People grid ===== */
 .people-grid{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* side by side */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 26px 60px;
 }
-
-/* Keep 2 columns on most screens; switch to 1 only on small phones */
 @media (max-width: 640px){
   .people-grid{ grid-template-columns: 1fr; gap: 18px; }
 }
@@ -67,7 +64,11 @@ show_title: true
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 6px 0;
+  padding: 8px 0;
+
+  /* animation start state */
+  opacity: 0;
+  transform: translateY(14px);
 }
 
 .person-photo{
@@ -101,7 +102,6 @@ show_title: true
   opacity: .9;
 }
 
-/* Role pill */
 .role-pill{
   display: inline-block;
   margin-top: 10px;
@@ -113,21 +113,61 @@ show_title: true
   font-size: 1.0rem;
 }
 
-/* Contact */
-.contact{
-  font-size: 1.2rem;
-  margin-top: 6px;
+/* ===== Hover micro-interaction ===== */
+.person:hover{
+  transform: translateY(-2px);
+}
+
+/* ===== Animation keyframes ===== */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .person{ opacity: 1 !important; transform: none !important; }
 }
 </style>
+
+<script>
+/* Fade + slide-in members when they enter the viewport */
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".person");
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((el) => {
+      el.style.opacity = 1;
+      el.style.transform = "translateY(0)";
+    });
+    return;
+  }
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const delay = el.getAttribute("data-delay") || "0ms";
+        el.style.animation = `fadeUp 520ms ease-out ${delay} forwards`;
+        obs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  items.forEach((el) => obs.observe(el));
+});
+</script>
 
 </div>
 {:/nomarkdown}
 
 {::nomarkdown}
-<div class="section-title">Top Board Members</div>
+<div class="section-title">Board Members</div>
 <div class="people-grid">
+{% assign idx = 0 %}
 {% for member in site.data.people %}
-  <div class="person">
+  <div class="person" data-delay="{{ idx | times: 80 }}ms">
     <img class="person-photo" src="{{ site.baseurl }}/images/{{ member.photo }}" alt="{{ member.name }}">
     <div>
       <p class="person-name">{{ member.name }}</p>
@@ -139,6 +179,7 @@ show_title: true
       {% endif %}
     </div>
   </div>
+  {% assign idx = idx | plus: 1 %}
 {% endfor %}
 </div>
 {:/nomarkdown}
@@ -146,8 +187,9 @@ show_title: true
 {::nomarkdown}
 <div class="section-title">Faculty Advisor</div>
 <div class="people-grid">
+{% assign idx2 = 0 %}
 {% for member in site.data.pi %}
-  <div class="person">
+  <div class="person" data-delay="{{ idx2 | times: 80 }}ms">
     <img class="person-photo" src="{{ site.baseurl }}/images/{{ member.photo }}" alt="{{ member.name }}">
     <div>
       <p class="person-name">
@@ -165,11 +207,13 @@ show_title: true
       {% endif %}
     </div>
   </div>
+  {% assign idx2 = idx2 | plus: 1 %}
 {% endfor %}
 </div>
 {:/nomarkdown}
 
 {::nomarkdown}
+<!--
 <div class="section-title">Alumni</div>
 <div class="people-grid">
 {% for member in site.data.alumni %}
@@ -180,16 +224,9 @@ show_title: true
       {% if member.info and member.info != "" %}
         <p class="person-role">{{ member.info }}</p>
       {% endif %}
-      <!-- IMPORTANT: no description on alumni (prevents unwanted "comments") -->
     </div>
   </div>
 {% endfor %}
 </div>
-{:/nomarkdown}
-
-{::nomarkdown}
-<div class="section-title">Contact</div>
-<div class="contact">
-  Email: <a href="mailto:ieeegsbosu@gmail.com"><u>ieeegsbosu@gmail.com</u></a>
-</div>
+-->
 {:/nomarkdown}
