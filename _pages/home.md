@@ -1,6 +1,6 @@
 ---
 title: "IEEE Graduate Student Branch @ Ohio State"
-layout: homelay
+layout: page
 permalink: /
 ---
 
