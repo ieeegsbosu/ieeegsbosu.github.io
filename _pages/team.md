@@ -12,35 +12,23 @@ show_title: true
 <!-- OSU scarlet accent bar -->
 <div style="
   height: 6px;
-  width: 100px;
+  width: 110px;
   background: #BB0000;
-  margin: 24px 0 24px 0;
+  margin: 26px 0 26px 0;
   border-radius: 4px;">
 </div>
 
 <!-- PAGE INTRO -->
-<div style="
-  background: linear-gradient(180deg, #1b1b1b 0%, #202020 100%);
-  padding: 34px 30px;
-  border-radius: 18px;
-  margin-bottom: 40px;
-  border: 1px solid rgba(255,255,255,0.10);
-">
-  <div style="display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center;">
+<div class="team-hero">
+  <div class="team-hero-row">
     <div>
-      <h1 style="margin:0; font-size: 2.2rem;">Team</h1>
-      <p style="margin:12px 0 0 0; opacity:0.92; font-size:1.15rem; max-width: 820px;">
+      <h1 class="team-h1">Meet our team</h1>
+      <p class="team-sub">
         Meet our board, faculty advisor, and alumni who support IEEE GSB at Ohio State.
       </p>
     </div>
-    <div style="
-      background: rgba(80,160,255,.18);
-      border: 1px solid rgba(80,160,255,.30);
-      padding: 12px 14px;
-      border-radius: 14px;
-      white-space: nowrap;
-      font-size: 1.05rem;
-    ">
+
+    <div class="team-cta">
       <strong>New members welcome!</strong>
       <a href="{{ site.baseurl }}/vacancies"><u>See openings</u></a>
     </div>
@@ -48,98 +36,157 @@ show_title: true
 </div>
 
 <style>
-/* ===== Make page wider ===== */
+/* ===== Page width ===== */
 .team-wrap{
-  max-width: 1240px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 14px;
+  padding: 0 16px;
 }
 
-/* --- Team grid/cards --- */
+/* ===== Hero ===== */
+.team-hero{
+  background: linear-gradient(180deg, #1b1b1b 0%, #202020 100%);
+  padding: 40px 34px;
+  border-radius: 20px;
+  margin-bottom: 44px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 14px 34px rgba(0,0,0,.28);
+}
+
+.team-hero-row{
+  display:flex;
+  justify-content:space-between;
+  gap:22px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.team-h1{
+  margin:0;
+  font-size: 2.6rem;      /* bigger */
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.team-sub{
+  margin:14px 0 0 0;
+  opacity:0.93;
+  font-size:1.25rem;      /* bigger */
+  max-width: 900px;
+  line-height: 1.45;
+}
+
+.team-cta{
+  background: rgba(80,160,255,.18);
+  border: 1px solid rgba(80,160,255,.30);
+  padding: 14px 16px;
+  border-radius: 16px;
+  white-space: nowrap;
+  font-size: 1.12rem;     /* bigger */
+}
+
+/* ===== Section headings ===== */
+.section-title{
+  font-size: 1.95rem;     /* bigger */
+  font-weight: 950;
+  margin: 44px 0 18px 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,.14);
+}
+
+/* ===== Grid/cards ===== */
 .team-grid{
   display:grid;
   grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:22px;
-}
-@media (max-width: 820px){
-  .team-grid{ grid-template-columns:1fr; }
+  gap:24px;
 }
 
+@media (max-width: 920px){
+  .team-grid{ grid-template-columns:1fr; }
+  .team-hero{ padding: 34px 22px; }
+  .team-h1{ font-size: 2.15rem; }
+  .team-sub{ font-size: 1.15rem; }
+}
+
+/* Card */
 .team-card{
   background: rgba(255,255,255,.07);
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 18px;
-  padding: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.24);
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 14px 34px rgba(0,0,0,.26);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 .team-card:hover{
   transform: translateY(-3px);
-  box-shadow: 0 16px 38px rgba(0,0,0,.34);
+  box-shadow: 0 18px 44px rgba(0,0,0,.34);
 }
 
 .team-row{
   display:flex;
-  gap:16px;
+  gap:18px;
   align-items:center;
 }
 
-/* ===== Bigger images (not compressed) ===== */
+/* ===== Images: bigger + clearer ===== */
+/* NOTE: true clarity requires higher-res source photos.
+   This improves presentation but cannot invent detail. */
 .team-photo{
-  width: 118px;
-  height: 118px;
-  border-radius: 16px;
+  width: 140px;
+  height: 140px;
+  border-radius: 18px;
   object-fit: cover;
   object-position: center;
-  border: 2px solid rgba(255,255,255,.12);
+  border: 2px solid rgba(255,255,255,.14);
   background: rgba(255,255,255,.08);
-  flex: 0 0 118px;
+  flex: 0 0 140px;
+
+  /* perceived crispness */
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0);
 }
 
-/* ===== Bigger fonts ===== */
+/* Text */
 .team-name{
-  font-weight: 850;
-  font-size: 1.25rem;
+  font-weight: 950;
+  font-size: 1.45rem;     /* bigger */
   margin: 0;
+  letter-spacing: -0.01em;
 }
+
 .team-role{
-  margin: 8px 0 0 0;
-  opacity: .92;
-  font-size: 1.05rem;
+  margin: 10px 0 0 0;
+  opacity: .93;
+  font-size: 1.15rem;     /* bigger */
 }
+
 .team-desc{
-  margin-top: 12px;
-  opacity: .92;
-  font-size: 1.02rem;
-  line-height: 1.45;
+  margin-top: 14px;
+  opacity: .93;
+  font-size: 1.10rem;     /* bigger */
+  line-height: 1.55;
 }
 
-.section-title{
-  font-size: 1.75rem;
-  font-weight: 900;
-  margin: 38px 0 16px 0;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255,255,255,.12);
-}
-
-/* Role badge slightly bigger */
+/* Badge */
 .badge{
   display:inline-block;
-  padding: 7px 12px;
+  padding: 9px 14px;
   border-radius: 999px;
   background: rgba(187,0,0,.22);
-  border: 1px solid rgba(187,0,0,.40);
-  font-weight: 750;
-  font-size: .95rem;
-  margin-top: 8px;
+  border: 1px solid rgba(187,0,0,.42);
+  font-weight: 850;
+  font-size: 1.02rem;     /* bigger */
+  margin-top: 10px;
 }
 
+/* Contact */
 .contact-box{
   background: rgba(255,255,255,.07);
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 18px;
-  padding: 18px;
-  font-size: 1.1rem;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.2rem;      /* bigger */
 }
 </style>
 
