@@ -171,8 +171,14 @@ a:focus {
 }
 
 .gsb-logo {
-  height: 120px;
+  max-height: 120px;
+  max-width: 220px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
+
 
 .gsb-hero-title {
   font-weight: 800;
