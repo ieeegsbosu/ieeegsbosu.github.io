@@ -379,18 +379,36 @@ footer a:hover,
 }
 
 /* =========================================================
-   FOOTER POLISH
+   FOOTER POLISH (GRID-BASED)
    ========================================================= */
 
-footer h4 {
+.footer {
+  padding: 48px 0 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  align-items: start;
+}
+
+.footer-col h4 {
   margin-bottom: 14px;
+  font-size: 1.15rem;
 }
 
-footer p {
+.footer-col p {
   line-height: 1.6;
+  margin-bottom: 10px;
 }
 
-footer .col-md-4 {
-  margin-bottom: 20px;
+/* Stack on mobile */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
+
 
