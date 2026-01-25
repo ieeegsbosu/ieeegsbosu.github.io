@@ -1,6 +1,3 @@
-- name: Paul Berger
-  photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
-  researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
+- name: "Paul Berger"
+  info: "Faculty Advisor"
+  photo: "paul-berger.jpg"
