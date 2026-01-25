@@ -2,7 +2,7 @@
 title: "Team"
 layout: page
 permalink: /team/
-show_title: true
+show_title: false
 ---
 
 {::nomarkdown}

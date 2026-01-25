@@ -30,9 +30,3 @@ We’re currently looking for students interested in helping with:
 - Volunteer on organizing committees  
 - Serve in leadership roles  
 - Collaborate with industry and faculty partners  
-
-## Contact Us
-
-Email us at **[ieeegsbosu@gmail.com](mailto:ieeegsbosu@gmail.com)**
-
-We look forward to meeting you!
