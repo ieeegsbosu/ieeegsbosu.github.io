@@ -25,39 +25,40 @@ show_title: true
 </p>
 
 <style>
-/* ===== Page width & typography ===== */
+/* ===== Full-width feel ===== */
 .team-wrap{
-  max-width: 1100px;
+  max-width: 1400px;   /* was 1100px */
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;     /* a bit more breathing room */
 }
 
+/* Intro */
 .team-intro{
-  font-size: 1.15rem;
-  line-height: 1.55;
+  font-size: 1.25rem;
+  line-height: 1.6;
   margin: 0 0 26px 0;
   opacity: .92;
 }
-
-.team-intro-cta{ margin-left: 6px; }
+.team-intro-cta{ margin-left: 8px; }
 
 /* ===== Section titles ===== */
 .section-title{
-  font-size: 1.65rem;
+  font-size: 1.85rem;
   font-weight: 900;
-  margin: 34px 0 14px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0,0,0,.08);
+  margin: 38px 0 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0,0,0,.10);
 }
 
-/* ===== People grid (no boxes) ===== */
+/* ===== People grid ===== */
 .people-grid{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px 44px; /* row gap, column gap */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* side by side */
+  gap: 26px 60px;
 }
 
-@media (max-width: 820px){
+/* Keep 2 columns on most screens; switch to 1 only on small phones */
+@media (max-width: 640px){
   .people-grid{ grid-template-columns: 1fr; gap: 18px; }
 }
 
@@ -65,56 +66,56 @@ show_title: true
 .person{
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 6px 0; /* no box, just breathing room */
+  gap: 18px;
+  padding: 6px 0;
 }
 
 .person-photo{
-  width: 92px;
-  height: 92px;
-  border-radius: 999px; /* circular */
+  width: 105px;
+  height: 105px;
+  border-radius: 999px;
   object-fit: cover;
   object-position: center;
   border: 3px solid rgba(187,0,0,.25);
   box-shadow: 0 8px 20px rgba(0,0,0,.10);
-  flex: 0 0 92px;
+  flex: 0 0 105px;
 }
 
 .person-name{
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 900;
   line-height: 1.15;
 }
 
 .person-role{
-  margin: 6px 0 0 0;
-  font-size: 1.05rem;
-  opacity: .85;
+  margin: 8px 0 0 0;
+  font-size: 1.10rem;
+  opacity: .86;
 }
 
 .person-desc{
-  margin: 8px 0 0 0;
-  font-size: 1.02rem;
-  line-height: 1.45;
+  margin: 10px 0 0 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
   opacity: .9;
 }
 
-/* ===== Role pill (optional, looks clean without boxes) ===== */
+/* Role pill */
 .role-pill{
   display: inline-block;
-  margin-top: 8px;
-  padding: 6px 10px;
+  margin-top: 10px;
+  padding: 7px 12px;
   border-radius: 999px;
   background: rgba(187,0,0,.10);
   border: 1px solid rgba(187,0,0,.22);
   font-weight: 750;
-  font-size: .95rem;
+  font-size: 1.0rem;
 }
 
-/* ===== Contact ===== */
+/* Contact */
 .contact{
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   margin-top: 6px;
 }
 </style>
@@ -149,9 +150,18 @@ show_title: true
   <div class="person">
     <img class="person-photo" src="{{ site.baseurl }}/images/{{ member.photo }}" alt="{{ member.name }}">
     <div>
-      <p class="person-name">{{ member.name }}</p>
+      <p class="person-name">
+        {% if member.website and member.website != "" %}
+          <a href="{{ member.website }}" target="_blank"><u>{{ member.name }}</u></a>
+        {% else %}
+          {{ member.name }}
+        {% endif %}
+      </p>
       {% if member.info and member.info != "" %}
         <p class="person-role">{{ member.info }}</p>
+      {% endif %}
+      {% if member.description and member.description != "" %}
+        <p class="person-desc">{{ member.description }}</p>
       {% endif %}
     </div>
   </div>
@@ -170,6 +180,7 @@ show_title: true
       {% if member.info and member.info != "" %}
         <p class="person-role">{{ member.info }}</p>
       {% endif %}
+      <!-- IMPORTANT: no description on alumni (prevents unwanted "comments") -->
     </div>
   </div>
 {% endfor %}
