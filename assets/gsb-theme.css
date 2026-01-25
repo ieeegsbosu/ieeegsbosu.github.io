@@ -32,6 +32,14 @@
   --link: var(--ieee-blue);
   --link-hover: var(--osu-scarlet);
 }
+/* =========================================================
+   TYPOGRAPHY SCALE
+   ========================================================= */
+
+html {
+  font-size: 17px; /* default browser is 16px */
+}
+
 
 /* LIGHT MODE */
 [data-theme="light"] {
@@ -62,6 +70,12 @@ li {
   line-height: 1.65;
 }
 
+p,
+li {
+  font-size: 1.05rem;
+}
+
+
 
 /* =========================================================
    HEADINGS
@@ -84,6 +98,45 @@ h2 {
   padding-bottom: 0.35rem;
   border-bottom: 2px solid rgba(187, 0, 0, 0.35);
 }
+/* =========================================================
+   HEADING SIZES
+   ========================================================= */
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+/* =========================================================
+   HEADING SIZES
+   ========================================================= */
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
 
 
 /* =========================================================
@@ -125,6 +178,14 @@ a:focus {
 .navbar .nav-link:hover {
   color: var(--text) !important;
 }
+.navbar .nav-link {
+  font-size: 1.05rem;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.15rem;
+}
+
 
 
 /* =========================================================
