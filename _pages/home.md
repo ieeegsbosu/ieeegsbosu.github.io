@@ -3,6 +3,14 @@ title: "IEEE Graduate Student Branch @ Ohio State"
 layout: page
 permalink: /
 ---
+<div style="
+  height: 6px;
+  width: 80px;
+  background: #BB0000;
+  margin: 24px 0 32px 0;
+  border-radius: 4px;">
+</div>
+
 
 <div style="display:flex; justify-content:center; gap:60px; margin-top:30px; margin-bottom:30px;">
   <img src="/images/The_Ohio_State_University_Logo.jpg"
