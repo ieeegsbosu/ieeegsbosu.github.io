@@ -1,7 +1,7 @@
-- name: "Member 1"
-  position: "President"
-  photo: "member1.jpg"
-  description: "Short description about what they do."
+- name: "Srinivasan Subramaniyan"
+  position: "Treasurer"
+  photo: "srinivasan.jpg"
+  description: "Srini is a fifth year PhD student at OSU"
 
 - name: "Member 2"
   position: "Vice President"
