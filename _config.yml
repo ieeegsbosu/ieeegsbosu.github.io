@@ -27,7 +27,6 @@ contact: >
 # Pages shown in navbar
 # NOTE: these names must match markdown files in _pages/ (e.g., _pages/about.md => "about")
 nav_pages:
-  - name: about
   - name: team
 
 include:
