@@ -29,7 +29,7 @@ contact: >
 nav_pages:
   - name: home
   - name: about
-  - name: people
+  - name: team
 
 include:
   - .htaccess
