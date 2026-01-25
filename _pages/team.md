@@ -6,23 +6,26 @@ show_title: false
 ---
 
 {::nomarkdown}
-<div class="team-wrap">
 
-<!-- OSU scarlet accent bar -->
-<div style="
-  height: 6px;
-  width: 110px;
-  background: #BB0000;
-  margin: 18px 0 18px 0;
-  border-radius: 4px;">
+<!-- Use same accent bar class as Home -->
+<div class="gsb-accent-bar"></div>
+
+<!-- HERO header like Home -->
+<div class="gsb-hero" style="padding: 34px 28px; margin-bottom: 28px;">
+  <h1 class="gsb-hero-title" style="margin-bottom: 10px;">
+    Meet Our Team
+    <span class="gsb-accent"> @ IEEE GSB</span>
+  </h1>
+
+  <p class="gsb-hero-text" style="margin-top: 10px;">
+    Meet our board and faculty advisor who support IEEE GSB at Ohio State.
+    <span style="white-space: nowrap;">
+      <a href="{{ site.baseurl }}/vacancies"><u>New members welcome — see openings</u></a>.
+    </span>
+  </p>
 </div>
 
-<p class="team-intro">
-  Meet our board and faculty advisor who support IEEE GSB at Ohio State.
-  <span class="team-intro-cta">
-    <a href="{{ site.baseurl }}/vacancies"><u>New members welcome — see openings</u></a>.
-  </span>
-</p>
+<div class="team-wrap">
 
 <style>
 /* ===== Full-width feel ===== */
@@ -32,21 +35,13 @@ show_title: false
   padding: 0 24px;
 }
 
-.team-intro{
-  font-size: 1.25rem;
-  line-height: 1.6;
-  margin: 0 0 26px 0;
-  opacity: .92;
-}
-.team-intro-cta{ margin-left: 8px; }
-
-/* ===== Section titles ===== */
+/* ===== Section titles (match dark theme) ===== */
 .section-title{
   font-size: 1.85rem;
   font-weight: 900;
-  margin: 38px 0 16px 0;
+  margin: 34px 0 16px 0;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(0,0,0,.10);
+  border-bottom: 1px solid rgba(255,255,255,.12);
 }
 
 /* ===== People grid ===== */
@@ -64,22 +59,23 @@ show_title: false
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 8px 0;
+  padding: 10px 0;
 
   /* animation start state */
   opacity: 0;
   transform: translateY(14px);
+  transition: transform .18s ease;
 }
 
 .person-photo{
-  width: 105px;
-  height: 105px;
+  width: 110px;
+  height: 110px;
   border-radius: 999px;
   object-fit: cover;
   object-position: center;
-  border: 3px solid rgba(187,0,0,.25);
-  box-shadow: 0 8px 20px rgba(0,0,0,.10);
-  flex: 0 0 105px;
+  border: 3px solid rgba(187,0,0,.35);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  flex: 0 0 110px;
 }
 
 .person-name{
@@ -92,24 +88,25 @@ show_title: false
 .person-role{
   margin: 8px 0 0 0;
   font-size: 1.10rem;
-  opacity: .86;
+  opacity: .88;
 }
 
 .person-desc{
   margin: 10px 0 0 0;
   font-size: 1.05rem;
   line-height: 1.5;
-  opacity: .9;
+  opacity: .92;
 }
 
+/* ===== Role pill ===== */
 .role-pill{
   display: inline-block;
   margin-top: 10px;
   padding: 7px 12px;
   border-radius: 999px;
-  background: rgba(187,0,0,.10);
-  border: 1px solid rgba(187,0,0,.22);
-  font-weight: 750;
+  background: rgba(187,0,0,.18);
+  border: 1px solid rgba(187,0,0,.32);
+  font-weight: 800;
   font-size: 1.0rem;
 }
 
@@ -163,6 +160,8 @@ document.addEventListener("DOMContentLoaded", function () {
 {:/nomarkdown}
 
 {::nomarkdown}
+<div class="team-wrap">
+
 <div class="section-title">Board Members</div>
 <div class="people-grid">
 {% assign idx = 0 %}
@@ -182,9 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
   {% assign idx = idx | plus: 1 %}
 {% endfor %}
 </div>
-{:/nomarkdown}
 
-{::nomarkdown}
 <div class="section-title">Faculty Advisor</div>
 <div class="people-grid">
 {% assign idx2 = 0 %}
@@ -210,9 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
   {% assign idx2 = idx2 | plus: 1 %}
 {% endfor %}
 </div>
-{:/nomarkdown}
 
-{::nomarkdown}
 <!--
 <div class="section-title">Alumni</div>
 <div class="people-grid">
@@ -229,4 +224,6 @@ document.addEventListener("DOMContentLoaded", function () {
 {% endfor %}
 </div>
 -->
+
+</div>
 {:/nomarkdown}
