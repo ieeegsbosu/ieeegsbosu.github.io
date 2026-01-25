@@ -1,0 +1,7 @@
+- name: "Paul Berger"
+  info: "Faculty Advisor"
+  email: ""
+  website: ""
+  photo: "paul-berger.jpg"
+  education:
+    - "Advisor to IEEE GSB OSU"
