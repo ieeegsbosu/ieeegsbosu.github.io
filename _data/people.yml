@@ -1,9 +1,9 @@
 - name: "Member 1"
   position: "President"
   photo: "member1.jpg"
-  description: "Short description below the name."
+  description: "Short description about what they do."
 
 - name: "Member 2"
   position: "Vice President"
   photo: "member2.jpg"
-  description: "Short description below the name."
+  description: "Short description about what they do."
