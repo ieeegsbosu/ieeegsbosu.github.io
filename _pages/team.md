@@ -6,10 +6,13 @@ show_title: true
 ---
 
 {::nomarkdown}
+
+<div class="team-wrap">
+
 <!-- OSU scarlet accent bar -->
 <div style="
   height: 6px;
-  width: 80px;
+  width: 100px;
   background: #BB0000;
   margin: 24px 0 24px 0;
   border-radius: 4px;">
@@ -18,24 +21,25 @@ show_title: true
 <!-- PAGE INTRO -->
 <div style="
   background: linear-gradient(180deg, #1b1b1b 0%, #202020 100%);
-  padding: 28px 24px;
-  border-radius: 16px;
-  margin-bottom: 36px;
-  border: 1px solid rgba(255,255,255,0.08);
+  padding: 34px 30px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255,255,255,0.10);
 ">
-  <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center;">
+  <div style="display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center;">
     <div>
-      <h1 style="margin:0;">Team</h1>
-      <p style="margin:10px 0 0 0; opacity:0.9;">
+      <h1 style="margin:0; font-size: 2.2rem;">Team</h1>
+      <p style="margin:12px 0 0 0; opacity:0.92; font-size:1.15rem; max-width: 820px;">
         Meet our board, faculty advisor, and alumni who support IEEE GSB at Ohio State.
       </p>
     </div>
     <div style="
       background: rgba(80,160,255,.18);
       border: 1px solid rgba(80,160,255,.30);
-      padding: 10px 12px;
-      border-radius: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
       white-space: nowrap;
+      font-size: 1.05rem;
     ">
       <strong>New members welcome!</strong>
       <a href="{{ site.baseurl }}/vacancies"><u>See openings</u></a>
@@ -44,81 +48,102 @@ show_title: true
 </div>
 
 <style>
+/* ===== Make page wider ===== */
+.team-wrap{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
 /* --- Team grid/cards --- */
 .team-grid{
   display:grid;
   grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:18px;
+  gap:22px;
 }
-@media (max-width: 750px){
+@media (max-width: 820px){
   .team-grid{ grid-template-columns:1fr; }
 }
+
 .team-card{
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.24);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 .team-card:hover{
   transform: translateY(-3px);
-  box-shadow: 0 14px 34px rgba(0,0,0,.32);
+  box-shadow: 0 16px 38px rgba(0,0,0,.34);
 }
+
 .team-row{
   display:flex;
-  gap:14px;
+  gap:16px;
   align-items:center;
 }
+
+/* ===== Bigger images (not compressed) ===== */
 .team-photo{
-  width: 88px;
-  height: 88px;
-  border-radius: 14px;
+  width: 118px;
+  height: 118px;
+  border-radius: 16px;
   object-fit: cover;
-  border: 2px solid rgba(255,255,255,.10);
+  object-position: center;
+  border: 2px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.08);
-  flex: 0 0 88px;
+  flex: 0 0 118px;
 }
+
+/* ===== Bigger fonts ===== */
 .team-name{
-  font-weight: 800;
-  font-size: 1.06rem;
+  font-weight: 850;
+  font-size: 1.25rem;
   margin: 0;
 }
 .team-role{
-  margin: 6px 0 0 0;
+  margin: 8px 0 0 0;
   opacity: .92;
-  font-size: .95rem;
+  font-size: 1.05rem;
 }
 .team-desc{
-  margin-top: 10px;
+  margin-top: 12px;
   opacity: .92;
-  font-size: .93rem;
-  line-height: 1.35;
+  font-size: 1.02rem;
+  line-height: 1.45;
 }
+
 .section-title{
-  font-size: 1.45rem;
-  font-weight: 850;
-  margin: 34px 0 14px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255,255,255,.10);
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin: 38px 0 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
 }
+
+/* Role badge slightly bigger */
 .badge{
   display:inline-block;
-  padding: 6px 10px;
+  padding: 7px 12px;
   border-radius: 999px;
-  background: rgba(187,0,0,.20);
-  border: 1px solid rgba(187,0,0,.35);
-  font-weight: 700;
-  font-size: .86rem;
-  margin-top: 6px;
+  background: rgba(187,0,0,.22);
+  border: 1px solid rgba(187,0,0,.40);
+  font-weight: 750;
+  font-size: .95rem;
+  margin-top: 8px;
 }
+
 .contact-box{
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: 16px;
-  padding: 16px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  padding: 18px;
+  font-size: 1.1rem;
 }
 </style>
+
+</div>
 {:/nomarkdown}
 
 {::nomarkdown}
