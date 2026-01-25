@@ -316,3 +316,20 @@ footer a:hover,
   object-fit: cover;
   border: 2px solid var(--border);
 }
+
+/* =========================================================
+   FOOTER POLISH
+   ========================================================= */
+
+footer h4 {
+  margin-bottom: 14px;
+}
+
+footer p {
+  line-height: 1.6;
+}
+
+footer .col-md-4 {
+  margin-bottom: 20px;
+}
+
