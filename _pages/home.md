@@ -21,6 +21,7 @@ permalink: /
   margin-bottom: 56px;
 ">
 
+
   <div style="
     display:flex;
     justify-content:center;
@@ -28,13 +29,18 @@ permalink: /
     margin-bottom:40px;
     flex-wrap:wrap;
   ">
+  
     <img src="/images/The_Ohio_State_University_Logo.jpg"
          alt="The Ohio State University Logo"
          style="height:120px;">
+  
     <img src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png"
          alt="IEEE Graduate Student Body Logo"
          style="height:120px;">
+  
   </div>
+
+
 
   <h1 style="text-align:center;">
     IEEE Graduate Student Branch <span class="gsb-accent">@ Ohio State</span>
