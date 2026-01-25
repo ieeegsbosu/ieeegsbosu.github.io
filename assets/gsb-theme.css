@@ -411,4 +411,38 @@ footer a:hover,
   }
 }
 
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.social-icons a {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+
+  font-size: 22px;
+  transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+  background: var(--osu-scarlet);
+  color: #fff;
+  border-color: var(--osu-scarlet);
+}
+
+
 
