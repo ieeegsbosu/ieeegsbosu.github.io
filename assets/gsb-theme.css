@@ -1,7 +1,7 @@
 /* =========================================================
    IEEE GSB @ OSU theme
    Scarlet + gray + subtle IEEE blue
-   Light / Dark mode enabled
+   Light / Dark mode enabled (FORCED)
    ========================================================= */
 
 /* =========================================================
@@ -10,12 +10,12 @@
 
 /* DARK MODE (default) */
 :root {
-  /* OSU / IEEE brand */
+  /* Brand */
   --osu-scarlet: #BB0000;
   --osu-scarlet-dark: #8A0000;
   --ieee-blue: #00629B;
 
-  /* Core surfaces */
+  /* Surfaces */
   --bg: #1B1B1B;
   --surface: #202020;
   --surface-2: #262626;
@@ -45,20 +45,18 @@
 }
 
 /* =========================================================
-   BASE
+   FORCE THEME TO WIN (IMPORTANT)
    ========================================================= */
 
-html, body {
-  background: var(--bg);
-  color: var(--text);
-}
-
+html,
 body {
-  letter-spacing: 0.1px;
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
 }
 
-p, li {
-  color: var(--text-muted);
+p,
+li {
+  color: var(--text-muted) !important;
   line-height: 1.65;
 }
 
@@ -67,7 +65,7 @@ p, li {
    ========================================================= */
 
 h1, h2, h3, h4, h5 {
-  color: var(--text);
+  color: var(--text) !important;
 }
 
 h1 {
@@ -84,21 +82,23 @@ h2 {
    LINKS
    ========================================================= */
 
-a, a:visited {
+a,
+a:visited {
   color: var(--link);
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--link-hover);
 }
 
 /* =========================================================
-   NAVBAR
+   NAVBAR (OVERRIDE BOOTSTRAP)
    ========================================================= */
 
 .navbar {
-  background: var(--bg) !important;
+  background-color: var(--bg) !important;
   border-bottom: 1px solid var(--border);
 }
 
@@ -108,36 +108,35 @@ a:hover, a:focus {
   font-weight: 700;
 }
 
-.navbar .navbar-nav > li > a {
+.navbar .nav-link {
   color: var(--text-muted) !important;
   font-weight: 600;
 }
 
-.navbar .navbar-nav > li > a:hover {
+.navbar .nav-link:hover {
   color: var(--text) !important;
-}
-
-.navbar .navbar-nav > .active > a {
-  border-bottom: 2px solid var(--osu-scarlet);
 }
 
 /* =========================================================
    LAYOUT
    ========================================================= */
 
-.container, .container-fluid {
+.container,
+.container-fluid {
   max-width: 1100px;
 }
 
 /* =========================================================
-   CARDS / PANELS
+   CARDS / PANELS / WELLS
    ========================================================= */
 
-.card, .panel, .well {
-  background: var(--surface) !important;
+.card,
+.panel,
+.well,
+.team-card {
+  background-color: var(--surface) !important;
   border: 1px solid var(--border) !important;
   border-radius: 12px !important;
-  box-shadow: none !important;
 }
 
 /* =========================================================
@@ -150,17 +149,18 @@ a:hover, a:focus {
 }
 
 .btn-primary {
-  background: var(--osu-scarlet) !important;
+  background-color: var(--osu-scarlet) !important;
   border-color: var(--osu-scarlet) !important;
-  color: white !important;
+  color: #ffffff !important;
 }
 
 .btn-primary:hover {
-  background: var(--osu-scarlet-dark) !important;
+  background-color: var(--osu-scarlet-dark) !important;
   border-color: var(--osu-scarlet-dark) !important;
 }
 
-.btn-default, .btn-secondary {
+.btn-secondary,
+.btn-default {
   background: transparent !important;
   border: 1px solid var(--border) !important;
   color: var(--text) !important;
@@ -170,16 +170,19 @@ a:hover, a:focus {
    FOOTER
    ========================================================= */
 
-.footer, footer {
-  background: var(--bg) !important;
+footer,
+.footer {
+  background-color: var(--bg) !important;
   border-top: 1px solid var(--border);
-  color: var(--text-muted);
+  color: var(--text-muted) !important;
 }
 
+footer a,
 .footer a {
   color: var(--ieee-blue);
 }
 
+footer a:hover,
 .footer a:hover {
   color: var(--osu-scarlet);
 }
@@ -194,10 +197,6 @@ a:hover, a:focus {
 
 .gsb-accent-ieee {
   color: var(--ieee-blue) !important;
-}
-
-img {
-  image-rendering: auto;
 }
 
 /* =========================================================
@@ -217,19 +216,6 @@ img {
 
 @media (max-width: 575px) {
   .team-grid { grid-template-columns: 1fr; }
-}
-
-.team-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.18);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(0,0,0,.26);
 }
 
 .team-avatar {
