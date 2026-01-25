@@ -1,27 +1,49 @@
-<br/>
-<section id="footer">
-<div class="container-footer">
-  <div class="panel-footer">
-	  <div class="row">
-		<div class="col-sm-4">
-		    <h5>About</h5>	
-            <p>{{ site.affiliation }}</p>
-		</div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
 
-		<div class="col-sm-4">
-		    <h5>Contact</h5>	
-            <p>{{ site.contact }}</p>
-		</div>
+      <!-- LEFT: Stay Connected -->
+      <div class="col-md-12">
+        <h3>Stay Connected</h3>
+        <hr>
+        <ul>
+          <li>
+            📧 <strong>Email:</strong>
+            <a href="mailto:ieeegsb.osu@gmail.com">ieeegsb.osu@gmail.com</a>
+          </li>
+          <li>
+            📸 <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/ieeegsb_ohiostate/?hl=en" target="_blank">
+              @ieeegsb_ohiostate
+            </a>
+          </li>
+        </ul>
+      </div>
 
-		<div class="col-sm-4">
-		    <h5>Coordinates</h5>	
-            <p>{{ site.location }}</p>
-		</div>
-	  </div>
+    </div>
 
-      <center><p>&copy {{ "now" | date: "%Y" }} {{site.title | escape }} </p></center>
-	</div>
+    <div class="row" style="margin-top:40px">
+
+      <!-- CONTACT -->
+      <div class="col-md-6">
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:ieeegsb.osu@gmail.com">
+            ✉️ Contact IEEE GSB via email
+          </a>
+        </p>
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="col-md-6">
+        <h4>Address</h4>
+        <p>
+          The Ohio State University<br>
+          Columbus, OH, USA
+        </p>
+      </div>
+
+    </div>
+
   </div>
-</div>
-
-<script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+</footer>
