@@ -43,7 +43,7 @@ show_title: false
 {:/nomarkdown}
 ## Upcoming Events
 - **Coffee with Donuts** — February 6  
-- **<a href="{{ site.baseurl }}/subpages/aiday/">IEEE GSB AI Day</a>** — February 12 
+- **<a href="{{ site.baseurl }}/subpages/aiday/">IEEE GSB OSU AI Symposium 2026</a>** — February 12 
 
 ## Past Events
 
