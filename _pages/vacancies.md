@@ -11,36 +11,44 @@ show_title: false
 <div class="gsb-accent-bar"></div>
 
 <!-- HERO SECTION -->
-<div class="gsb-hero">
+<div class="gsb-hero hero-bubbles">
 
-  <!-- Logos -->
-  <div class="gsb-hero-logos">
-    <img
-      src="/images/The_Ohio_State_University_Logo.jpg"
-      alt="The Ohio State University Logo"
-      class="gsb-logo">
+  {% include hero-bubbles.html %}
 
-    <img
-      src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png"
-      alt="IEEE Graduate Student Body Logo"
-      class="gsb-logo">
+  <div class="hero-content">
+
+    <!-- Logos -->
+    <div class="gsb-hero-logos">
+      <img
+        src="/images/The_Ohio_State_University_Logo.jpg"
+        alt="The Ohio State University Logo"
+        class="gsb-logo">
+
+      <img
+        src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png"
+        alt="IEEE Graduate Student Body Logo"
+        class="gsb-logo">
+    </div>
+
+    <!-- Title -->
+    <h1 class="gsb-hero-title">
+      Join IEEE Graduate Student Branch
+      <span class="gsb-accent">@ Ohio State</span>
+    </h1>
+
+    <!-- Description -->
+    <p class="gsb-hero-text">
+      We welcome <strong>all graduate students at The Ohio State University</strong>
+      who are interested in engineering &amp; technology, research, professional
+      development, leadership, and service.
+    </p>
+
   </div>
-
-  <!-- Title -->
-  <h1 class="gsb-hero-title">
-    Join IEEE Graduate Student Branch
-    <span class="gsb-accent">@ Ohio State</span>
-  </h1>
-
-  <!-- Description -->
-  <p class="gsb-hero-text">
-    We welcome <strong>all graduate students at The Ohio State University</strong> who are interested in
-    engineering &amp; technology, research, professional development, leadership, and service.
-  </p>
 
 </div>
 
 {:/nomarkdown}
+
 
 ## Who Should Join?
 
