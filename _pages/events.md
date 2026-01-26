@@ -52,10 +52,26 @@ show_title: false
 
 ## Upcoming Events
 
-- 🍩 **Coffee with Donuts** — February 6  
-- 🤖 **<a href="{{ site.baseurl }}/subpages/aiday/" style="color: blue; text-decoration: underline;">
-  IEEE GSB OSU AI Symposium 2026
-  </a>** — February 12
+{::nomarkdown}
+<div style="max-width: 800px; margin: 0 auto;">
+
+<p style="margin-bottom: 12px;">
+  Upcoming IEEE GSB events are listed below.
+</p>
+
+<p>
+  1) 🍩 <strong>Coffee with Donuts</strong> — February 6<br>
+  2) 🤖 <strong>
+     <a href="{{ site.baseurl }}/subpages/aiday/" style="color: blue; text-decoration: underline;">
+       IEEE GSB OSU AI Symposium 2026
+     </a>
+     </strong> — February 12
+</p>
+
+</div>
+{:/nomarkdown}
+
+---
 
 ## Past Events
 
@@ -67,51 +83,16 @@ show_title: false
   listed in reverse chronological order.
 </p>
 
-<ol style="padding-left: 20px;">
-
-  <li>
-    <strong>December 2025</strong> — 📚🍩<br>
-    <strong>Reading Day with Donuts</strong>
-  </li>
-
-  <li>
-    <strong>November 2025</strong> — 📝<br>
-    <strong>How to Write Research Proposals</strong>
-    <em>(Virtual – Zoom)</em>
-  </li>
-
-  <li>
-    <strong>November 2025</strong> — ✍️<br>
-    <strong>How to Write Good Research Papers</strong>
-  </li>
-
-  <li>
-    <strong>October 2025</strong> — 🍩<br>
-    <strong>De-Stress with Donuts</strong> — ~30 participants
-  </li>
-
-  <li>
-    <strong>September 2025</strong> — 🆔💻<br>
-    <strong>Getting to Know ORCID</strong>
-    <em>(Virtual – Zoom)</em> — ~20 participants
-  </li>
-
-  <li>
-    <strong>September 2025</strong> — 🎓<br>
-    <strong>IEEE Graduate Student Orientation</strong> — ~10 participants
-  </li>
-
-  <li>
-    <strong>May 2025</strong> — 🍕🤝<br>
-    <strong>IEEE Pizza, People, and Possibilities</strong> — ~40 participants
-  </li>
-
-  <li>
-    <strong>April 2025</strong> — 🍩<br>
-    <strong>De-Stress with Donuts</strong> — ~30 participants
-  </li>
-
-</ol>
+<p>
+  1) 📚🍩 <strong>Reading Day with Donuts</strong> — December 2025<br>
+  2) 📝 <strong>How to Write Research Proposals</strong> <em>(Virtual – Zoom)</em> — November 2025<br>
+  3) ✍️ <strong>How to Write Good Research Papers</strong> — November 2025<br>
+  4) 🍩 <strong>De-Stress with Donuts</strong> — October 2025 (~30 participants)<br>
+  5) 🆔💻 <strong>Getting to Know ORCID</strong> <em>(Virtual – Zoom)</em> — September 2025 (~20 participants)<br>
+  6) 🎓 <strong>IEEE Graduate Student Orientation</strong> — September 2025 (~10 participants)<br>
+  7) 🍕🤝 <strong>IEEE Pizza, People, and Possibilities</strong> — May 2025 (~40 participants)<br>
+  8) 🍩 <strong>De-Stress with Donuts</strong> — April 2025 (~30 participants)
+</p>
 
 </div>
 {:/nomarkdown}
