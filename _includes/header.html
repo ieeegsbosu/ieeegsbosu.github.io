@@ -31,12 +31,12 @@
     <!-- LEFT NAV LINKS -->
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-      {% for p in site.nav_pages %}
-        <a class="nav-item nav-link {% if page.url contains p.name %}active{% endif %}"
-           href="{{ site.url }}{{ site.baseurl }}/{{ p.name }}">
-          {{ p.name | capitalize }}
-        </a>
-      {% endfor %}
+    {% for p in site.nav_pages %}
+      <a class="nav-item nav-link {% if page.url contains p.name %}active{% endif %}"
+         href="{{ site.url }}{{ site.baseurl }}/{{ p.name }}">
+        {{ p.name | capitalize }}
+      </a>
+    {% endfor %}
     </div>
 
     <!-- RIGHT SIDE (THEME TOGGLE) -->
