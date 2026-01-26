@@ -1,7 +1,7 @@
 ---
 title: "IEEE GSB AI Day"
 layout: page
-permalink: /subpages/aidya/
+permalink: /subpages/aiday/
 show_title: false
 ---
 
