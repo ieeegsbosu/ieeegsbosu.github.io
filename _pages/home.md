@@ -11,41 +11,7 @@ show_title: false
 <div class="gsb-accent-bar"></div>
 
 <!-- HERO SECTION -->
-<div class="gsb-hero hero-bubbles">
 
-  <!-- Bubble background -->
-  <!-- Bubble background -->
-  <div class="bubble-layer">
-  
-    <span class="bubble small brutus-bubble" style="left:8%; animation-duration:9s;">
-      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-    </span>
-  
-    <span class="bubble medium brutus-bubble" style="left:22%; animation-duration:11s;">
-      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-    </span>
-  
-    <span class="bubble small brutus-bubble" style="left:38%; animation-duration:10s;">
-      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-    </span>
-  
-    <span class="bubble large brutus-bubble" style="left:55%; animation-duration:13s;">
-      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-    </span>
-  
-    <span class="bubble medium brutus-bubble" style="left:70%; animation-duration:11s;">
-      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-    </span>
-  
-    <span class="bubble small brutus-bubble" style="left:82%; animation-duration:9s;">
-      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-    </span>
-  
-    <span class="bubble small brutus-bubble" style="left:92%; animation-duration:10s;">
-      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-    </span>
-  
-  </div>
 
 
 
