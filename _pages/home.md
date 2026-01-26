@@ -14,17 +14,39 @@ show_title: false
 <div class="gsb-hero hero-bubbles">
 
   <!-- Bubble background -->
-  <span class="bubble small" style="left:8%; animation-duration:16s;"></span>
-  <span class="bubble medium" style="left:22%; animation-duration:20s;"></span>
-  <span class="bubble small" style="left:38%; animation-duration:18s;"></span>
+  <!-- Bubble background -->
+  <div class="bubble-layer">
   
-  <span class="bubble large brutus-bubble" style="left:55%;">
-    <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
-  </span>
+    <span class="bubble small brutus-bubble" style="left:8%; animation-duration:9s;">
+      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+    </span>
   
-  <span class="bubble medium" saying="left:70%; animation-duration:22s;"></span>
-  <span class="bubble small" style="left:82%; animation-duration:17s;"></span>
-  <span class="bubble small" style="left:92%; animation-duration:19s;"></span>
+    <span class="bubble medium brutus-bubble" style="left:22%; animation-duration:11s;">
+      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+    </span>
+  
+    <span class="bubble small brutus-bubble" style="left:38%; animation-duration:10s;">
+      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+    </span>
+  
+    <span class="bubble large brutus-bubble" style="left:55%; animation-duration:13s;">
+      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+    </span>
+  
+    <span class="bubble medium brutus-bubble" style="left:70%; animation-duration:11s;">
+      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+    </span>
+  
+    <span class="bubble small brutus-bubble" style="left:82%; animation-duration:9s;">
+      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+    </span>
+  
+    <span class="bubble small brutus-bubble" style="left:92%; animation-duration:10s;">
+      <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+    </span>
+  
+  </div>
+
 
 
   <!-- Existing hero content -->
