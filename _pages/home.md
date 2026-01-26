@@ -1,5 +1,5 @@
 ---
-title: "IEEE Graduate Student Branch @ Ohio State"
+title: "IEEE Graduate Student Body @ Ohio State"
 layout: page
 permalink: /
 show_title: false
@@ -36,11 +36,11 @@ show_title: false
     </div>
 
     <h1 class="gsb-hero-title">
-      IEEE Graduate Student Branch <span class="gsb-accent">@ Ohio State</span>
+      IEEE Graduate Student Body <span class="gsb-accent">@ Ohio State</span>
     </h1>
 
     <p class="gsb-hero-text">
-      The <strong>IEEE Graduate Student Branch (GSB)</strong> at
+      The <strong>IEEE Graduate Student Body (GSB)</strong> at
       <strong>The Ohio State University</strong> is a graduate-led organization
       dedicated to fostering technical excellence, leadership, and professional
       development among graduate students.
