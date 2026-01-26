@@ -579,16 +579,19 @@ footer a:hover,
 /* Base bubble */
 .bubble {
   position: absolute;
-  bottom: -140px;
+  bottom: -160px;
   border-radius: 50%;
-  opacity: 0.28;
-  animation: bubble-float linear infinite;
+  opacity: 0.35;
+
   background: radial-gradient(
     circle at 30% 30%,
-    rgba(255,255,255,0.9),
-    rgba(255,255,255,0.15)
+    rgba(255,255,255,0.95),
+    rgba(255,255,255,0.25)
   );
+
+  animation: bubble-float linear infinite;
 }
+
 
 /* Bubble sizes */
 .bubble.small {
@@ -615,9 +618,10 @@ footer a:hover,
     transform: translateY(0) translateX(0);
   }
   to {
-    transform: translateY(-140%) translateX(-20px);
+    transform: translateY(-180vh) translateX(-40px);
   }
 }
+
 
 
 /* =========================================================
@@ -628,15 +632,30 @@ footer a:hover,
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: rgba(255,255,255,0.92);
-  opacity: 0.95;
-  box-shadow: 0 14px 36px rgba(0,0,0,0.35);
+  box-shadow:
+    0 16px 40px rgba(0,0,0,0.45),
+    0 0 22px rgba(187,0,0,0.35);
 }
 
 .brutus-bubble img {
-  width: 130px;
-  animation: brutus-float 3.2s ease-in-out infinite;
+  width: 90px;
+  animation: brutus-bounce 1.8s ease-in-out infinite;
+}
+
+@keyframes brutus-bounce {
+  0%   { transform: translateY(0) rotate(-2deg); }
+  50%  { transform: translateY(-14px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(-2deg); }
+}
+
+[data-theme="light"] .bubble {
+  opacity: 0.45;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255,255,255,0.98),
+    rgba(200,200,200,0.35)
+  );
 }
 
 /* Dark mode boost */
@@ -648,8 +667,9 @@ footer a:hover,
 }
 
 [data-theme="dark"] .brutus-bubble img {
-  filter: brightness(1.18) contrast(1.12) saturate(1.05);
+  filter: brightness(1.2) contrast(1.15) saturate(1.1);
 }
+
 
 /* Dark mode bubbles (scarlet tint) */
 [data-theme="dark"] .bubble {
