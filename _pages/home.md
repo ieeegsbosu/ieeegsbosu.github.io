@@ -11,16 +11,17 @@ show_title: false
 <div class="gsb-accent-bar"></div>
 
 <!-- HERO SECTION -->
+<div class="gsb-hero hero-bubbles">
 
+  {% include hero-bubbles.html %}
 
-
-
-  <!-- Existing hero content -->
+  <!-- Hero content -->
   <div class="hero-content">
+
     <!-- logos -->
     <div class="gsb-hero-logos">
-      <img src="/images/The_Ohio_State_University_Logo.jpg" class="gsb-logo">
-      <img src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png" class="gsb-logo">
+      <img src="/images/The_Ohio_State_University_Logo.jpg" class="gsb-logo" alt="Ohio State University">
+      <img src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png" class="gsb-logo" alt="IEEE GSB">
     </div>
 
     <h1 class="gsb-hero-title">
@@ -33,12 +34,13 @@ show_title: false
       dedicated to fostering technical excellence, leadership, and professional
       development among graduate students.
     </p>
+
   </div>
 
 </div>
 
-
 {:/nomarkdown}
+
 
 ## About IEEE GSB
 
