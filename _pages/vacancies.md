@@ -102,15 +102,17 @@ You can get involved by:
 - Volunteering on organizing committees  
 - Serving in leadership roles  
 - Collaborating with industry and faculty partners  
-
 ---
 
 ## Interested?
 
 Send us a short note with:
-- Your name + program/department  
+- Your name and program/department  
 - The role(s) you’re interested in  
 - Any relevant experience (optional)  
 - Your availability (hours/week)
-
-(You can add a contact link/button here if you have a preferred email or Google Form.)
+Apply using the form below:  
+<a href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=NlYJ61IQlUiVKx_53x0RIUuHPS8DCg5HlzOmPQHhGYVUNDdOQlhVWVo3OFZLMlY0OTZESDE1VUNENS4u"
+   style="color: blue; text-decoration: underline;">
+   Application Form
+</a>
