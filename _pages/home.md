@@ -34,15 +34,20 @@ show_title: false
 
   <!-- Description -->
   <p class="gsb-hero-text">
-    The <strong>IEEE Graduate Student Branch (GSB)</strong> at
-    <strong>The Ohio State University</strong> is a graduate-led organization
-    dedicated to fostering technical excellence, leadership, and professional
+    The <strong>IEEE Graduate Student Branch (GSB)</strong> at <strong>The Ohio State University</strong> is a graduate-led organization dedicated to fostering technical excellence, leadership, and professional
     development among graduate students.
   </p>
 
 </div>
 
 {:/nomarkdown}
+
+## About IEEE GSB
+
+IEEE GSB is an **active graduate student organization** at The Ohio State University (Columbus campus) with **open membership**.
+
+**Purpose:** We, the IEEE graduate student members at The Ohio State University, seek to advance the state of the art in technology within our fields of expertise. The organization promotes innovation, encourages collaboration, facilitates thoughtful technical exchange, and advocates for the professional and personal well-being of its members.
+---
 
 ## What We Do
 
@@ -54,23 +59,24 @@ show_title: false
     <h3>Technical Events</h3>
     <p>
       Workshops, seminars, and invited talks covering emerging technologies,
-      research topics, and applied engineering practice.
+      cutting-edge research topics, and applied engineering practice.
     </p>
   </div>
 
   <div class="card gsb-card">
     <h3>Professional Development</h3>
     <p>
-      Career panels, resume reviews, and industry engagement tailored
-      specifically for graduate students.
+      Monthly events featuring presentations, career-focused discussions,
+      and practical resources designed to support graduate student success.
     </p>
   </div>
 
   <div class="card gsb-card">
-    <h3>Community & Leadership</h3>
+    <h3>Community &amp; Leadership</h3>
     <p>
-      Opportunities to lead initiatives, collaborate across disciplines,
-      and build a strong graduate engineering community.
+      Opportunities to take on leadership roles, collaborate across disciplines,
+      and participate in monthly social events that foster a strong graduate
+      engineering community.
     </p>
   </div>
 
@@ -78,23 +84,27 @@ show_title: false
 
 {:/nomarkdown}
 
-## Get Involved
+---
 
-IEEE GSB is open to **all graduate students at Ohio State** with interests in
-engineering, technology, and research.
+## Join IEEE GSB
 
-You can get involved by:
-- Attending our events
-- Volunteering on organizing committees
-- Serving in leadership roles
-- Collaborating with industry and faculty partners
+Membership is open to **all graduate students at Ohio State**. Apply using the appropriate link below:
+
+- **ECE students:** https://forms.office.com/r/3ZT3BezZQn  
+- **Non-ECE students:** https://forms.office.com/r/aseDFZsLPc  
+- **Interested in becoming an officer (Application &amp; Selection):**  
+  Please visit the **Vacancies** page: **/vacancies/**
+
+> New membership is welcome **at any time during the year**. No membership dues are required.
 
 ---
 
 ## Upcoming Events
 
-- Event details coming soon  
-- Spring 2026 programming announcements will be posted here  
+- **Coffee with Donuts** — February 6  
+- **IEEE GSB AI Day** — February 12  
+
+For past events, please visit the **Events** page: **/events/**  
+*(Ensure your `events.md` file uses `permalink: /events/`.)*
 
 ---
-
