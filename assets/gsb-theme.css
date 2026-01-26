@@ -658,9 +658,10 @@ footer a:hover,
     transform: translateY(0) translateX(0);
   }
   to {
-    transform: translateY(-140%) translateX(-18px);
+    transform: translateY(-140%) translateX(-20px);
   }
 }
+
 
 /* =========================================================
    BRUTUS INSIDE HERO BUBBLE
