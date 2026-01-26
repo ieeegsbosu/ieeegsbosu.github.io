@@ -1,7 +1,7 @@
 # Site settings
-title: IEEE Graduate Student Branch (GSB) @ The Ohio State University
+title: IEEE Graduate Student Body (GSB) @ The Ohio State University
 email: ieee.gsb@osu.edu
-description: IEEE Graduate Student Branch at The Ohio State University
+description: IEEE Graduate Student Body at The Ohio State University
 baseurl: ""   # keep "" for user/organization pages, set "/repo-name" if using a project page
 url: "https://ieeegsbosu.github.io"  # update if your GitHub Pages URL differs
 
@@ -12,7 +12,7 @@ url: "https://ieeegsbosu.github.io"  # update if your GitHub Pages URL differs
 
 # Footer info
 affiliation: >
-  IEEE Graduate Student Branch (GSB)<br/>
+  IEEE Graduate Student Body (GSB)<br/>
   The Ohio State University<br/>
   IEEE Student Activities
 
