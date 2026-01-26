@@ -14,16 +14,18 @@ show_title: false
 <div class="gsb-hero hero-bubbles">
 
   <!-- Bubble background -->
-  <div class="bubble-layer">
-    <span class="bubble small"></span>
-    <span class="bubble medium"></span>
-    <span class="bubble small"></span>
-    <span class="bubble large brutus-bubble">
-      <img src="{{ '/images/brutus.png' | relative_url }}"
-           alt="Brutus Buckeye">
-    </span>
-    <span class="bubble medium"></span>
-  </div>
+  <span class="bubble small" style="left:8%; animation-duration:16s;"></span>
+  <span class="bubble medium" style="left:22%; animation-duration:20s;"></span>
+  <span class="bubble small" style="left:38%; animation-duration:18s;"></span>
+  
+  <span class="bubble large brutus-bubble" style="left:55%;">
+    <img src="{{ '/images/brutus.png' | relative_url }}" alt="Brutus Buckeye">
+  </span>
+  
+  <span class="bubble medium" saying="left:70%; animation-duration:22s;"></span>
+  <span class="bubble small" style="left:82%; animation-duration:17s;"></span>
+  <span class="bubble small" style="left:92%; animation-duration:19s;"></span>
+
 
   <!-- Existing hero content -->
   <div class="hero-content">
