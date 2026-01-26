@@ -185,6 +185,12 @@ a:focus {
 .navbar .navbar-brand {
   font-size: 1.15rem;
 }
+/* Active navbar link */
+.navbar .nav-link.active {
+  color: var(--text) !important;
+  border-bottom: 2px solid var(--osu-scarlet);
+}
+
 
 
 
