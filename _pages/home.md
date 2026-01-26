@@ -46,8 +46,14 @@ show_title: false
 
 IEEE GSB is an **active graduate student organization** at The Ohio State University (Columbus campus) with **open membership**.
 
-**Purpose:** We, the IEEE graduate student members at The Ohio State University, seek to advance the state of the art in technology within our fields of expertise. The organization promotes innovation, encourages collaboration, facilitates thoughtful technical exchange, and advocates for the professional and personal well-being of its members.
----
+{::nomarkdown}
+<p style="font-size: 0.95rem; line-height: 1.45; margin-top: 6px;">
+  <strong>Purpose:</strong>
+  We, the IEEE graduate student members at The Ohio State University, seek to advance the state of the art in technology within our fields of expertise.
+  The organization promotes innovation, encourages collaboration, facilitates thoughtful technical exchange, and advocates for the professional and personal
+  well-being of its members.
+</p>
+{:/nomarkdown}
 
 ## What We Do
 
@@ -93,7 +99,7 @@ Membership is open to **all graduate students at Ohio State**. Apply using the a
 - **ECE students:** https://forms.office.com/r/3ZT3BezZQn  
 - **Non-ECE students:** https://forms.office.com/r/aseDFZsLPc  
 - **Interested in becoming an officer (Application &amp; Selection):**  
-  Please visit the **Vacancies** page: **/vacancies/**
+  <a href="https://ieeegsbosu.github.io/vacancies/" style="color: blue; text-decoration: underline;">Vacancies page</a>
 
 > New membership is welcome **at any time during the year**. No membership dues are required.
 
@@ -104,7 +110,9 @@ Membership is open to **all graduate students at Ohio State**. Apply using the a
 - **Coffee with Donuts** — February 6  
 - **IEEE GSB AI Day** — February 12  
 
-For past events, please visit the **Events** page: **/events/**  
+For past events, please visit the
+<a href="https://ieeegsbosu.github.io/events/" style="color: blue; text-decoration: underline;">Events page</a>.  
+
 *(Ensure your `events.md` file uses `permalink: /events/`.)*
 
 ---
