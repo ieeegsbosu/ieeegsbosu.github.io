@@ -42,35 +42,69 @@ show_title: false
 
 {:/nomarkdown}
 ## Upcoming Events
-- **Coffee with Donuts** — February 6  
-- **<a href="{{ site.baseurl }}/subpages/aiday/">IEEE GSB OSU AI Symposium 2026</a>** — February 12 
+
+- 🍩 **Coffee with Donuts** — February 6  
+- 🤖 **<a href="{{ site.baseurl }}/subpages/aiday/" style="color: blue; text-decoration: underline;">
+  IEEE GSB OSU AI Symposium 2026
+  </a>** — February 12
 
 ## Past Events
 
-Below is a summary of IEEE GSB events held during the 2025 calendar year, listed in reverse chronological order.
+{::nomarkdown}
+<div style="max-width: 800px; margin: 0 auto;">
 
-1. **December 2025** — 📚🍩  
-   **Reading Day with Donuts**
+<p style="margin-bottom: 12px;">
+  Below is a summary of IEEE GSB events held during the 2025 calendar year,
+  listed in reverse chronological order.
+</p>
 
-2. **November 2025** — 📝  
-   **How to Write Research Proposals** *(Virtual – Zoom)*  
+<ol style="padding-left: 20px;">
 
-3. **November 2025** — ✍️  
-   **How to Write Good Research Papers**
+  <li>
+    <strong>December 2025</strong> — 📚🍩<br>
+    <strong>Reading Day with Donuts</strong>
+  </li>
 
-4. **October 2025** — 🍩  
-   **De-Stress with Donuts** — ~30 participants  
+  <li>
+    <strong>November 2025</strong> — 📝<br>
+    <strong>How to Write Research Proposals</strong>
+    <em>(Virtual – Zoom)</em>
+  </li>
 
-5. **September 2025** — 🆔💻  
-   **Getting to Know ORCID** *(Virtual – Zoom)* — ~20 participants  
+  <li>
+    <strong>November 2025</strong> — ✍️<br>
+    <strong>How to Write Good Research Papers</strong>
+  </li>
 
-6. **September 2025** — 🎓  
-   **IEEE Graduate Student Orientation** — ~10 participants  
+  <li>
+    <strong>October 2025</strong> — 🍩<br>
+    <strong>De-Stress with Donuts</strong> — ~30 participants
+  </li>
 
-7. **May 2025** — 🍕🤝  
-   **IEEE Pizza, People, and Possibilities** — ~40 participants  
+  <li>
+    <strong>September 2025</strong> — 🆔💻<br>
+    <strong>Getting to Know ORCID</strong>
+    <em>(Virtual – Zoom)</em> — ~20 participants
+  </li>
 
-8. **April 2025** — 🍩  
-   **De-Stress with Donuts** — ~30 participants  
+  <li>
+    <strong>September 2025</strong> — 🎓<br>
+    <strong>IEEE Graduate Student Orientation</strong> — ~10 participants
+  </li>
+
+  <li>
+    <strong>May 2025</strong> — 🍕🤝<br>
+    <strong>IEEE Pizza, People, and Possibilities</strong> — ~40 participants
+  </li>
+
+  <li>
+    <strong>April 2025</strong> — 🍩<br>
+    <strong>De-Stress with Donuts</strong> — ~30 participants
+  </li>
+
+</ol>
+
+</div>
+{:/nomarkdown}
 
 ---
