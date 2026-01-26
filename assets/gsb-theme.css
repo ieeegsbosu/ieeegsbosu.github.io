@@ -444,5 +444,100 @@ footer a:hover,
   border-color: var(--osu-scarlet);
 }
 
+/* =========================================================
+   FOOTER LAYOUT
+   ========================================================= */
+
+.footer {
+  padding: 48px 0 40px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  align-items: start;
+}
+
+.footer-col h4 {
+  margin-bottom: 16px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* =========================================================
+   STAY CONNECTED LINKS
+   ========================================================= */
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer-link i {
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+}
+
+.footer-link:hover {
+  color: var(--osu-scarlet);
+}
+
+/* =========================================================
+   ADDRESS SECTION
+   ========================================================= */
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-address-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-address-line i {
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+  margin-top: 2px;
+  color: var(--text);
+}
+
+/* =========================================================
+   MOBILE STACKING
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+
 
 
