@@ -79,18 +79,18 @@ show_title: false
 
   <div class="gsb-speaker-grid" style="display: grid; grid-template-columns: 1fr; gap: 16px;">
     <!-- ========================= -->
-    <!-- SPEAKER 1 (EDIT CONTENT)  -->
+    <!-- SPEAKER 1 (UPDATED)       -->
     <!-- ========================= -->
     <article class="gsb-speaker-card" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 16px; padding: 16px;">
       <div class="gsb-speaker-header" style="display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start;">
         <img
-          src="/images/aiday/speakers/speaker1.jpg"
-          alt="Speaker 1 photo"
+          src="/images/Balavignesh_Vemparala_headshot.png"
+          alt="Balavignesh Vemparala headshot"
           style="width: 110px; height: 110px; object-fit: cover; border-radius: 14px; border: 1px solid rgba(0,0,0,0.10);">
         <div style="flex: 1; min-width: 240px;">
-          <h3 style="margin: 0 0 4px 0;">Speaker 1 Name</h3>
+          <h3 style="margin: 0 0 4px 0;">Balavignesh Vemparala</h3>
           <p style="margin: 0 0 8px 0;">
-            <strong>Title/Affiliation:</strong> Speaker 1 Title, Organization / University
+            <strong>Title/Affiliation:</strong> Senior R&amp;D Engineer, Synopsys (formerly Ansys)
           </p>
           <p style="margin: 0;">
             <strong>Talk Title:</strong> Talk Title for Speaker 1
@@ -107,8 +107,17 @@ show_title: false
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
         <p style="margin: 0;">
-          <!-- Replace with Speaker 1 bio -->
-          [Speaker 1 short bio goes here. Keep it ~80–150 words.]
+          Balavignesh Vemparala is a Senior R&amp;D Engineer at Synopsys (formerly Ansys), where he develops
+          high-performance computational methods for large-scale engineering simulation. His work focuses on
+          core finite element solver development in Mechanical APDL, HPC performance enhancement, and integrating
+          AI/LLM-assisted automation&mdash;such as retrieval-augmented generation (RAG) and agentic AI workflows&mdash;to
+          streamline simulation setup, pre-/post-processing, and improve user productivity. He earned his Ph.D.
+          in Mechanical Engineering from The Ohio State University, where his research spanned computational
+          mechanics and scientific machine learning, including AI-assisted finite element solver acceleration by
+          coupling operator-learning methods with domain decomposition, automated reconstruction and conforming
+          mesh generation for complex microstructures from imaging data, and computational biomechanics. His
+          interests lie at the intersection of numerical methods, high-performance scientific computing, and AI
+          for engineering applications.
         </p>
       </div>
     </article>
@@ -186,8 +195,8 @@ show_title: false
 
   <!-- Optional note about images -->
   <p style="margin-top: 16px; font-size: 0.95em; opacity: 0.85;">
-    <em>Image paths above assume you will upload speaker photos to:</em>
-    <code>/images/aiday/speakers/</code>
+    <em>Image paths above assume your speaker photos are hosted under</em>
+    <code>/images/</code> <em>(update paths as needed).</em>
   </p>
 </section>
 
