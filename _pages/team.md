@@ -72,22 +72,32 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <!-- Use same accent bar class as Home -->
+<!-- Use same accent bar class as Home -->
 <div class="gsb-accent-bar"></div>
 
-<!-- HERO header like Home -->
-<div class="gsb-hero" style="padding: 34px 28px; margin-bottom: 28px;">
-  <h1 class="gsb-hero-title" style="margin-bottom: 10px;">
-    Meet Our Team
-    <span class="gsb-accent"> @ IEEE GSB</span>
-  </h1>
+<!-- HERO header with Brutus bubble animation -->
+<div class="gsb-hero hero-bubbles" style="padding: 34px 28px; margin-bottom: 28px;">
 
-  <p class="gsb-hero-text" style="margin-top: 10px;">
-    Meet our board and faculty advisor who support IEEE GSB at Ohio State.
-    <span style="white-space: nowrap;">
-      <a href="{{ site.baseurl }}/vacancies"><u>New members welcome — see openings</u></a>.
-    </span>
-  </p>
+  {% include hero-bubbles.html %}
+
+  <div class="hero-content">
+    <h1 class="gsb-hero-title" style="margin-bottom: 10px;">
+      Meet Our Team
+      <span class="gsb-accent"> @ IEEE GSB</span>
+    </h1>
+
+    <p class="gsb-hero-text" style="margin-top: 10px;">
+      Meet our board and faculty advisor who support IEEE GSB at Ohio State.
+      <span style="white-space: nowrap;">
+        <a href="{{ site.baseurl }}/vacancies">
+          <u>New members welcome — see openings</u>
+        </a>.
+      </span>
+    </p>
+  </div>
+
 </div>
+
 
 <div class="team-wrap">
 
