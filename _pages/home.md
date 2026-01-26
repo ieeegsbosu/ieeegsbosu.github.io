@@ -114,7 +114,7 @@ To join IEEE GSB, please check the available positions on the <a href="{{ site.b
 ## Upcoming Events
 
 - **Coffee with Donuts** — February 6  
-- **<a href="{{ site.baseurl }}/subpages/aiday/">IEEE GSB AI Day</a>** — February 12 
+- **<a href="{{ site.baseurl }}/subpages/aiday/">IEEE GSB OSU AI Symposium 2026</a>** — February 12 
 
 To see all the past events, please visit the  <a href="{{ site.baseurl }}/events/" style="color: blue; text-decoration: underline;">Events page
 </a>.
