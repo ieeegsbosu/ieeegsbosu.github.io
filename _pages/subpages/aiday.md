@@ -48,7 +48,7 @@ show_title: false
 
 </div>
 
-{:/nomarkdown}
+
 
 
 <!-- EVENT INFO SECTION -->
@@ -80,6 +80,7 @@ show_title: false
     </a>
   </div>
 </section>
+
 
 <!-- SPEAKERS SECTION -->
 <section class="gsb-section gsb-aiday-speakers" style="max-width: 1100px; margin: 0 auto; padding: 10px 16px 36px 16px;">
