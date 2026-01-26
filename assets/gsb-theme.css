@@ -540,7 +540,7 @@ footer a:hover,
 
 
 /* =========================================================
-   BRUTUS BUCKEYE ANIMATION
+   BRUTUS BUCKEYE FLOATING MASCOT (GLOBAL)
    ========================================================= */
 
 #brutus-container {
@@ -557,18 +557,11 @@ footer a:hover,
   opacity: 0;
 
   animation:
-    brutus-float 3.5s ease-in-out infinite,
-    brutus-appear 0.9s ease-out forwards;
+    brutus-appear 0.9s ease-out forwards,
+    brutus-float 3.6s ease-in-out infinite 0.9s;
 }
 
-/* Floating motion */
-@keyframes brutus-float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-16px); }
-  100% { transform: translateY(0); }
-}
-
-/* Entrance animation */
+/* Entrance */
 @keyframes brutus-appear {
   from {
     opacity: 0;
@@ -580,23 +573,31 @@ footer a:hover,
   }
 }
 
-/* Mobile adjustment */
-@media (max-width: 768px) {
-  #brutus-buckeye {
-    width: 110px;
-  }
+/* Gentle float */
+@keyframes brutus-float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
 }
 
+/* Theme shadows */
 [data-theme="dark"] #brutus-buckeye {
-  filter: drop-shadow(0 10px 24px rgba(0,0,0,0.55));
+  filter: drop-shadow(0 12px 26px rgba(0,0,0,0.55));
 }
 
 [data-theme="light"] #brutus-buckeye {
   filter: drop-shadow(0 6px 14px rgba(0,0,0,0.2));
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  #brutus-buckeye {
+    width: 110px;
+  }
+}
+
 /* =========================================================
-   HERO BUBBLE ANIMATION (BRUTUS)
+   HERO BUBBLE SYSTEM
    ========================================================= */
 
 .hero-bubbles {
@@ -604,7 +605,7 @@ footer a:hover,
   overflow: hidden;
 }
 
-/* Content stays above bubbles */
+/* Keep text/logos above bubbles */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -621,47 +622,58 @@ footer a:hover,
 /* Base bubble */
 .bubble {
   position: absolute;
-  bottom: -120px;
+  bottom: -140px;
   border-radius: 50%;
-  opacity: 0.18;
+  opacity: 0.28;
+  animation: bubble-float linear infinite;
   background: radial-gradient(
     circle at 30% 30%,
     rgba(255,255,255,0.9),
-    rgba(255,255,255,0.1)
+    rgba(255,255,255,0.15)
   );
-  animation: bubble-float linear infinite;
 }
 
 /* Bubble sizes */
 .bubble.small {
   width: 60px;
   height: 60px;
-  left: 12%;
-  animation-duration: 18s;
+  animation-duration: 16s;
 }
 
 .bubble.medium {
   width: 110px;
   height: 110px;
-  left: 35%;
   animation-duration: 22s;
 }
 
 .bubble.large {
   width: 180px;
   height: 180px;
-  left: 65%;
-  animation-duration: 26s;
+  animation-duration: 28s;
 }
 
-/* Brutus bubble */
+/* Bubble float */
+@keyframes bubble-float {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-140%) translateX(-18px);
+  }
+}
+
+/* =========================================================
+   BRUTUS INSIDE HERO BUBBLE
+   ========================================================= */
+
 .brutus-bubble {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: rgba(255,255,255,0.92);
   opacity: 0.95;
-  background: rgba(255,255,255,0.9);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.35);
 }
 
 .brutus-bubble img {
@@ -669,26 +681,27 @@ footer a:hover,
   animation: brutus-float 3.2s ease-in-out infinite;
 }
 
-/* Floating animation */
-@keyframes bubble-float {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-140%);
-  }
+/* Dark mode boost */
+[data-theme="dark"] .brutus-bubble {
+  background: rgba(255,255,255,0.96);
+  box-shadow:
+    0 18px 42px rgba(0,0,0,0.65),
+    0 0 20px rgba(187,0,0,0.25);
 }
 
-/* Brutus bounce */
-@keyframes brutus-float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
+[data-theme="dark"] .brutus-bubble img {
+  filter: brightness(1.18) contrast(1.12) saturate(1.05);
 }
 
-/* Dark mode adjustment */
+/* Dark mode bubbles (scarlet tint) */
 [data-theme="dark"] .bubble {
-  opacity: 0.12;
+  opacity: 0.38;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255,255,255,0.25),
+    rgba(187,0,0,0.18),
+    rgba(187,0,0,0.08)
+  );
 }
 
 /* Mobile tuning */
@@ -702,6 +715,8 @@ footer a:hover,
     width: 100px;
   }
 }
+
+
 
 
 
