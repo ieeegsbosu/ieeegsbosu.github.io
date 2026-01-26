@@ -192,11 +192,7 @@ show_title: false
     </article>
   </div>
 
-  <!-- Optional note about images -->
-  <p style="margin-top: 16px; font-size: 0.95em; opacity: 0.85;">
-    <em>Image paths above assume your speaker photos are hosted under</em>
-    <code>/images/</code> <em>(update paths as needed).</em>
-  </p>
+
 </section>
 
 {:/nomarkdown}

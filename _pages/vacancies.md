@@ -101,7 +101,6 @@ You can get involved by:
 - Attending our events and workshops  
 - Volunteering on organizing committees  
 - Serving in leadership roles  
-- Collaborating with industry and faculty partners  
 ---
 
 ## Interested?
