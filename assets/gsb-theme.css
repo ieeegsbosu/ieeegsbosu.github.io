@@ -549,58 +549,9 @@ footer a:hover,
    BRUTUS BUCKEYE FLOATING MASCOT (GLOBAL)
    ========================================================= */
 
-#brutus-container {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  z-index: 999;
-  pointer-events: none;
-}
 
-#brutus-buckeye {
-  width: 160px;
-  max-width: 40vw;
-  opacity: 0;
 
-  animation:
-    brutus-appear 0.9s ease-out forwards,
-    brutus-float 3.6s ease-in-out infinite 0.9s;
-}
 
-/* Entrance */
-@keyframes brutus-appear {
-  from {
-    opacity: 0;
-    transform: translateY(24px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* Gentle float */
-@keyframes brutus-float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-14px); }
-  100% { transform: translateY(0); }
-}
-
-/* Theme shadows */
-[data-theme="dark"] #brutus-buckeye {
-  filter: drop-shadow(0 12px 26px rgba(0,0,0,0.55));
-}
-
-[data-theme="light"] #brutus-buckeye {
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.2));
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  #brutus-buckeye {
-    width: 110px;
-  }
-}
 
 /* =========================================================
    HERO BUBBLE SYSTEM
