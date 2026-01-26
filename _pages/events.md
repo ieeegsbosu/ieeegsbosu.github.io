@@ -41,7 +41,11 @@ show_title: false
 </div>
 
 {:/nomarkdown}
-## Events Conducted in 2025
+## Upcoming Events
+- **Coffee with Donuts** — February 6  
+- **<a href="{{ site.baseurl }}/subpages/aiday/">IEEE GSB AI Day</a>** — February 12 
+
+## Past Events
 
 Below is a summary of IEEE GSB events held during the 2025 calendar year, listed in reverse chronological order.
 
