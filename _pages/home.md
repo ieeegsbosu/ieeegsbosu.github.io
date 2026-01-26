@@ -90,23 +90,30 @@ IEEE GSB is an **active graduate student organization** at The Ohio State Univer
 
 {:/nomarkdown}
 
----
 ## Join IEEE GSB
 
-Membership is open to **all graduate students at Ohio State**.
-To join IEEE GSB, please apply using the form below:  
+Membership is open to **all graduate students at The Ohio State University**.
+
+To join IEEE GSB, please check the available positions on the  
+<a href="{{ site.baseurl }}/vacancies/" style="color: blue; text-decoration: underline;">
+Vacancies page
+</a>
+and apply using the form below:
+
 <a href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=NlYJ61IQlUiVKx_53x0RIUuHPS8DCg5HlzOmPQHhGYVUNDdOQlhVWVo3OFZLMlY0OTZESDE1VUNENS4u"
    style="color: blue; text-decoration: underline;">
    Membership Application Form
 </a>
+
 > New membership is welcome **at any time during the year**. No membership dues are required.
 
+---
 
 ## Upcoming Events
 
 - **Coffee with Donuts** — February 6  
-- **IEEE GSB AI Day** — February 12  
-
-For past events, please visit the
-<a href="https://ieeegsbosu.github.io/events/" style="color: blue; text-decoration: underline;">Events</a>.  
----
+- **<a href="{{ site.baseurl }}/subpages/aiday/">IEEE GSB AI Day</a>** — February 12
+To see all upcoming and past events, please visit the  
+<a href="{{ site.baseurl }}/events/" style="color: blue; text-decoration: underline;">
+Events page
+</a>.
