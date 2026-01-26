@@ -1,5 +1,5 @@
 ---
-title: "IEEE GSB AI Day"
+title: "IEEE GSB OSU AI Symposium 2026"
 layout: page
 permalink: /subpages/aiday/
 show_title: false
@@ -34,18 +34,17 @@ show_title: false
 
   <!-- Description -->
   <p class="gsb-hero-text">
-    The <strong>IEEE Graduate Student Branch (GSB)</strong> at <strong>The Ohio State University</strong> is a graduate-led organization dedicated to fostering technical excellence, leadership, and professional
-    development among graduate students.
+    The <strong>IEEE Graduate Student Branch (GSB)</strong> at <strong>The Ohio State University</strong> is a graduate-led organization dedicated to fostering technical excellence, leadership, and professional development among graduate students.
   </p>
 
 </div>
 
 <!-- EVENT INFO SECTION -->
 <section class="gsb-section gsb-aiday-info" style="max-width: 1100px; margin: 0 auto; padding: 24px 16px;">
-  <h2 class="gsb-section-title" style="margin: 0 0 8px 0;">IEEE GSB OSU AI Day</h2>
+  <h2 class="gsb-section-title" style="margin: 0 0 8px 0;">IEEE GSB OSU AI Symposium 2026</h2>
 
   <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
-    We are organizing <strong>IEEE Graduate Student Body OSU AI Day</strong> on <strong>February 12, 2026</strong>.
+    We are organizing <strong>IEEE Graduate Student Body OSU AI Symposium</strong> on <strong>February 12, 2026</strong>.
     Join us for talks and discussion featuring invited speakers across AI research and applications.
   </p>
 
