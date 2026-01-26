@@ -11,34 +11,42 @@ show_title: false
 <div class="gsb-accent-bar"></div>
 
 <!-- HERO SECTION -->
-<div class="gsb-hero">
+<div class="gsb-hero hero-bubbles">
 
-  <!-- Logos -->
-  <div class="gsb-hero-logos">
-    <img
-      src="/images/The_Ohio_State_University_Logo.jpg"
-      alt="The Ohio State University Logo"
-      class="gsb-logo">
-
-    <img
-      src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png"
-      alt="IEEE Graduate Student Body Logo"
-      class="gsb-logo">
+  <!-- Bubble background -->
+  <div class="bubble-layer">
+    <span class="bubble small"></span>
+    <span class="bubble medium"></span>
+    <span class="bubble small"></span>
+    <span class="bubble large brutus-bubble">
+      <img src="{{ '/images/brutus.png' | relative_url }}"
+           alt="Brutus Buckeye">
+    </span>
+    <span class="bubble medium"></span>
   </div>
 
-  <!-- Title -->
-  <h1 class="gsb-hero-title">
-    IEEE Graduate Student Branch
-    <span class="gsb-accent">@ Ohio State</span>
-  </h1>
+  <!-- Existing hero content -->
+  <div class="hero-content">
+    <!-- logos -->
+    <div class="gsb-hero-logos">
+      <img src="/images/The_Ohio_State_University_Logo.jpg" class="gsb-logo">
+      <img src="/images/sp21-studentorg-ieegraduatestudentbody-logo-01_2-640x480.png" class="gsb-logo">
+    </div>
 
-  <!-- Description -->
-  <p class="gsb-hero-text">
-    The <strong>IEEE Graduate Student Branch (GSB)</strong> at <strong>The Ohio State University</strong> is a graduate-led organization dedicated to fostering technical excellence, leadership, and professional
-    development among graduate students.
-  </p>
+    <h1 class="gsb-hero-title">
+      IEEE Graduate Student Branch <span class="gsb-accent">@ Ohio State</span>
+    </h1>
+
+    <p class="gsb-hero-text">
+      The <strong>IEEE Graduate Student Branch (GSB)</strong> at
+      <strong>The Ohio State University</strong> is a graduate-led organization
+      dedicated to fostering technical excellence, leadership, and professional
+      development among graduate students.
+    </p>
+  </div>
 
 </div>
+
 
 {:/nomarkdown}
 
