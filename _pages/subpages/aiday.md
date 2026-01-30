@@ -48,6 +48,36 @@ show_title: false
 
 </div>
 
+<!-- EVENT INFO SECTION -->
+<section class="gsb-section gsb-aiday-info" style="max-width: 1100px; margin: 0 auto; padding: 24px 16px;">
+  <h2 class="gsb-section-title" style="margin: 0 0 8px 0;">IEEE OSU AI Symposium 2026</h2>
+
+  <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
+    We are organizing the <strong>IEEE OSU AI Symposium</strong> on <strong>February 12, 2026</strong>, hosted by the
+    <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
+    Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
+  </p>
+
+  <div class="gsb-aiday-meta" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 18px 0;">
+    <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
+      <strong>Date:</strong> Feb 12, 2026
+    </div>
+    <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
+      <strong>Time:</strong> TBD
+    </div>
+    <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
+      <strong>Location:</strong> TBD (The Ohio State University)
+    </div>
+  </div>
+
+  <!-- Registration button (replace href with your real link) -->
+  <div style="margin-top: 10px;">
+    <a href="https://example.com/register" class="gsb-button"
+       style="display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; border:1px solid rgba(0,0,0,0.12);">
+      Register
+    </a>
+  </div>
+</section>
 
 <!-- ========================= -->
 <!-- SPEAKERS SECTION          -->
