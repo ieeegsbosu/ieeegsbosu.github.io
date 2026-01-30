@@ -166,7 +166,7 @@ show_title: false
 
       <div class="gsb-speaker-content" style="margin-top: 14px;">
         <h4 style="margin: 0 0 6px 0;">Abstract</h4>
-        <p style="margin: 0 0 12px 0;">[Add Balavignesh's talk abstract here.]</p>
+        <p style="margin: 0 0 12px 0;">[Will be posted soon]</p>
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
         <p style="margin: 0;">
@@ -266,7 +266,7 @@ show_title: false
           alt="Nitin photo"
           style="width: 110px; height: 110px; object-fit: cover; border-radius: 14px; border: 1px solid rgba(0,0,0,0.10);">
         <div style="flex: 1; min-width: 240px;">
-          <h3 style="margin: 0 0 4px 0;">Nithin</h3>
+          <h3 style="margin: 0 0 4px 0;">Nitin</h3>
           <p style="margin: 0 0 8px 0;"><strong>Title/Affiliation:</strong> TBD</p>
           <p style="margin: 0;"><strong>Talk Title:</strong> TBD</p>
         </div>
@@ -274,10 +274,10 @@ show_title: false
 
       <div class="gsb-speaker-content" style="margin-top: 14px;">
         <h4 style="margin: 0 0 6px 0;">Abstract</h4>
-        <p style="margin: 0 0 12px 0;">[Add Nithin's talk abstract here.]</p>
+        <p style="margin: 0 0 12px 0;">[Will be posted soon]</p>
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
-        <p style="margin: 0;">[Add Nithin's short bio here.]</p>
+        <p style="margin: 0;">[Will be posted soon]</p>
       </div>
     </article>
 
@@ -297,7 +297,7 @@ show_title: false
 
       <div class="gsb-speaker-content" style="margin-top: 14px;">
         <h4 style="margin: 0 0 6px 0;">Abstract</h4>
-        <p style="margin: 0 0 12px 0;">[Add Adithya's talk abstract here.]</p>
+        <p style="margin: 0 0 12px 0;">[Will be posted soon]</p>
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
         <p style="margin: 0;">
