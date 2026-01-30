@@ -63,16 +63,16 @@ show_title: false
       <strong>Date:</strong> Feb 12, 2026
     </div>
     <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
-      <strong>Time:</strong> TBD
+      <strong>Time:</strong> 11:00 AM to 5 PM
     </div>
     <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
-      <strong>Location:</strong> TBD (The Ohio State University)
-    </div>
+  <strong>Location:</strong> Great Hall Meeting Room 3, Ohio Union, The Ohio State University  
+  <br>1739 N High St, Columbus, OH 43210
   </div>
 
   <!-- Registration button (replace href with your real link) -->
   <div style="margin-top: 10px;">
-    <a href="https://example.com/register" class="gsb-button"
+    <a href="https://forms.office.com/r/gS66VBsnBr" class="gsb-button"
        style="display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; border:1px solid rgba(0,0,0,0.12);">
       Register
     </a>
@@ -265,57 +265,54 @@ show_title: false
   <div class="gsb-committee-grid"
        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; align-items: start;">
 
-    <!-- Replace images + names/roles -->
+    <!-- Srinivasan -->
     <div style="text-align:center;">
-      <img src="/images/committee/srini.jpg" alt="Srinivasan Subramaniyan"
+      <img src="/images/srinivasan.jpg" alt="Srinivasan Subramaniyan"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Srinivasan</div>
+      <div style="margin-top: 8px; font-weight: 600;">Srinivasan Subramaniyan</div>
       <div style="font-size: 0.92rem; opacity: 0.85;">Treasurer</div>
     </div>
 
+    <!-- Ashutosh -->
     <div style="text-align:center;">
-      <img src="/images/committee/ashutosh.jpg" alt="Ashutosh Soni"
+      <img src="/images/soni.jpg" alt="Ashutosh Soni"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Ashutosh</div>
+      <div style="margin-top: 8px; font-weight: 600;">Ashutosh Soni</div>
       <div style="font-size: 0.92rem; opacity: 0.85;">President</div>
     </div>
 
+    <!-- Nicholas -->
     <div style="text-align:center;">
-      <img src="/images/committee/member3.jpg" alt="Committee Member"
+      <img src="/images/aiday/nick.jpg" alt="Nicholas DiDonato"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Member 3</div>
+      <div style="margin-top: 8px; font-weight: 600;">Nicholas DiDonato</div>
       <div style="font-size: 0.92rem; opacity: 0.85;">Events</div>
     </div>
 
+    <!-- Julio -->
     <div style="text-align:center;">
-      <img src="/images/committee/member4.jpg" alt="Committee Member"
+      <img src="/images/julio.png" alt="Julio Rodriguez"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Member 4</div>
+      <div style="margin-top: 8px; font-weight: 600;">Julio Rodriguez</div>
       <div style="font-size: 0.92rem; opacity: 0.85;">Logistics</div>
     </div>
 
+    <!-- Srivatch -->
     <div style="text-align:center;">
-      <img src="/images/committee/member5.jpg" alt="Committee Member"
+      <img src="/images/srivatch.jpg" alt="Srivatch Sankar"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Member 5</div>
+      <div style="margin-top: 8px; font-weight: 600;">Srivatch Sankar</div>
+      <div style="font-size: 0.92rem; opacity: 0.85;">Technical</div>
+    </div>
+
+    <!-- Robert -->
+    <div style="text-align:center;">
+      <img src="/images/aiday/robert.jpg" alt="Robert G. Volkman"
+           style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
+      <div style="margin-top: 8px; font-weight: 600;">Robert G. Volkman</div>
       <div style="font-size: 0.92rem; opacity: 0.85;">Outreach</div>
-    </div>
-
-    <div style="text-align:center;">
-      <img src="/images/committee/member6.jpg" alt="Committee Member"
-           style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Member 6</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">Marketing</div>
-    </div>
-
-    <div style="text-align:center;">
-      <img src="/images/committee/member7.jpg" alt="Committee Member"
-           style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Member 7</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">Sponsorship</div>
     </div>
 
   </div>
 </section>
-
 {:/nomarkdown}
