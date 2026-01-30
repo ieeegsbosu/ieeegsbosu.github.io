@@ -52,11 +52,13 @@ show_title: false
 <section class="gsb-section gsb-aiday-info" style="max-width: 1100px; margin: 0 auto; padding: 24px 16px;">
   <h2 class="gsb-section-title" style="margin: 0 0 8px 0;">IEEE OSU AI Symposium 2026</h2>
 
-  <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
-    We are organizing the <strong>IEEE OSU AI Symposium</strong> on <strong>February 12, 2026</strong>, hosted by the
-    <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
-    Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
-  </p>
+ <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
+  We are organizing the <strong>IEEE OSU AI Symposium</strong> on <strong>February 12, 2026</strong>, hosted by the
+  <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
+  Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
+  <br><br>
+  🍽️ <strong>Free lunch and refreshments will be provided.</strong>
+</p>
 
   <div class="gsb-aiday-meta" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 18px 0;">
     <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
@@ -76,6 +78,64 @@ show_title: false
        style="display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; border:1px solid rgba(0,0,0,0.12);">
       Register
     </a>
+  </div>
+</section>
+
+
+<!-- ========================= -->
+<!-- EVENT TIMELINE            -->
+<!-- ========================= -->
+<section class="gsb-section gsb-aiday-timeline" style="max-width: 1100px; margin: 0 auto; padding: 10px 16px 28px 16px;">
+  <h2 class="gsb-section-title" style="margin: 0 0 14px 0;">Program Timeline</h2>
+
+  <div style="border: 1px solid rgba(0,0,0,0.12); border-radius: 16px; padding: 14px 16px;">
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">11:00 – 11:30</div>
+      <div>🔹 <strong>Welcome &amp; Introduction</strong><br>
+        IEEE GSB overview, event goals, speaker introductions
+      </div>
+    </div>
+
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">11:30 – 12:10</div>
+      <div>🎤 <strong>Session 1 — Balavignesh Vemparala</strong> (30 min talk + 10 min Q&amp;A)</div>
+    </div>
+
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">12:10 – 12:50</div>
+      <div>🎤 <strong>Session 2 — Dinesh Kumar Garg</strong> (30 min talk + 10 min Q&amp;A)</div>
+    </div>
+
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">12:50 – 1:50</div>
+      <div>🍽️ <strong>Lunch Break</strong> (1 hour)<br>
+        Networking with speakers and attendees
+      </div>
+    </div>
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">1:50 – 2:30</div>
+      <div>🎤 <strong>Session 3 — Deepak Warrier</strong> (30 min talk + 10 min Q&amp;A)</div>
+    </div>
+
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">2:30 – 3:10</div>
+      <div>🎤 <strong>Session 4 — Nitin</strong> (30 min talk + 10 min Q&amp;A)</div>
+    </div>
+
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">3:10 – 3:25</div>
+      <div>☕ <strong>Tea / Coffee Break</strong> (15 min)</div>
+    </div>
+
+    <div style="display:flex; gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div style="min-width: 130px; font-weight: 600;">3:25 – 4:05</div>
+      <div>🎤 <strong>Session 5 — D. Adithya Sriram</strong> (30 min talk + 10 min Q&amp;A)</div>
+    </div>
+
+    <div style="display:flex; gap:14px; padding: 10px 0;">
+      <div style="min-width: 130px; font-weight: 600;">4:05 – 4:20</div>
+      <div>🔹 <strong>Closing Remarks, Group Photo &amp; Networking</strong></div>
+    </div>
   </div>
 </section>
 
@@ -198,12 +258,12 @@ show_title: false
       </div>
     </article>
 
-    <!-- 4) Nithin -->
+    <!-- 4) Nitin -->
     <article class="gsb-speaker-card" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 16px; padding: 16px;">
       <div class="gsb-speaker-header" style="display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start;">
         <img
           src="/images/aiday/nithin.jpg"
-          alt="Nithin photo"
+          alt="Nitin photo"
           style="width: 110px; height: 110px; object-fit: cover; border-radius: 14px; border: 1px solid rgba(0,0,0,0.10);">
         <div style="flex: 1; min-width: 240px;">
           <h3 style="margin: 0 0 4px 0;">Nithin</h3>
@@ -270,7 +330,6 @@ show_title: false
       <img src="/images/srinivasan.jpg" alt="Srinivasan Subramaniyan"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
       <div style="margin-top: 8px; font-weight: 600;">Srinivasan Subramaniyan</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">Treasurer</div>
     </div>
 
     <!-- Ashutosh -->
@@ -278,7 +337,6 @@ show_title: false
       <img src="/images/soni.jpg" alt="Ashutosh Soni"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
       <div style="margin-top: 8px; font-weight: 600;">Ashutosh Soni</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">President</div>
     </div>
 
     <!-- Nicholas -->
@@ -286,7 +344,6 @@ show_title: false
       <img src="/images/aiday/nick.jpg" alt="Nicholas DiDonato"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
       <div style="margin-top: 8px; font-weight: 600;">Nicholas DiDonato</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">Events</div>
     </div>
 
     <!-- Julio -->
@@ -294,7 +351,6 @@ show_title: false
       <img src="/images/julio.png" alt="Julio Rodriguez"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
       <div style="margin-top: 8px; font-weight: 600;">Julio Rodriguez</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">Logistics</div>
     </div>
 
     <!-- Srivatch -->
@@ -302,15 +358,13 @@ show_title: false
       <img src="/images/srivatch.jpg" alt="Srivatch Sankar"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
       <div style="margin-top: 8px; font-weight: 600;">Srivatch Sankar</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">Technical</div>
     </div>
 
     <!-- Robert -->
     <div style="text-align:center;">
-      <img src="/images/aiday/robert.jpg" alt="Robert G. Volkman"
+      <img src="/images/aiday/rob.jpg" alt="Robert G. Volkman"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
       <div style="margin-top: 8px; font-weight: 600;">Robert G. Volkman</div>
-      <div style="font-size: 0.92rem; opacity: 0.85;">Outreach</div>
     </div>
 
   </div>
