@@ -51,42 +51,52 @@ show_title: false
 <!-- EVENT INFO SECTION -->
 <section class="gsb-section gsb-aiday-info" style="max-width: 1100px; margin: 0 auto; padding: 24px 16px;">
 
-  <!-- Title + Logo -->
-  <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px; flex-wrap:wrap;">
-    <img src="/images/ieee_ai_logo.png" alt="IEEE AI Logo"
-         style="height:48px; width:auto; object-fit:contain;">
-    <h2 class="gsb-section-title" style="margin:0;">IEEE OSU AI Day 2026</h2>
-  </div>
+  <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
 
-  <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
-    We are organizing the <strong>IEEE OSU AI Day</strong> on <strong>February 12, 2026</strong>, hosted by the
-    <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
-    Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
-    <br><br>
-    🍽️ <strong>Free lunch and refreshments will be provided.</strong>
-  </p>
+    <!-- LEFT: TEXT CONTENT -->
+    <div style="flex:1 1 520px; min-width:280px;">
 
-  <!-- Meta Pills -->
-  <div class="gsb-aiday-meta" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 18px 0;">
-    <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
-      <strong>Date:</strong> Feb 12, 2026
+      <h2 class="gsb-section-title" style="margin:0 0 8px 0;">IEEE OSU AI Day 2026</h2>
+
+      <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
+        We are organizing the <strong>IEEE OSU AI Day</strong> on <strong>February 12, 2026</strong>, hosted by the
+        <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
+        Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
+        <br><br>
+        🍽️ <strong>Free lunch and refreshments will be provided.</strong>
+      </p>
+
+      <!-- Meta Pills -->
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 18px 0;">
+        <div style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
+          <strong>Date:</strong> Feb 12, 2026
+        </div>
+
+        <div style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
+          <strong>Time:</strong> 11:00 AM to 5 PM
+        </div>
+
+        <div style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
+          <strong>Location:</strong> Great Hall Meeting Room 3, Ohio Union  
+          <br>1739 N High St, Columbus, OH 43210
+        </div>
+      </div>
+
+      <!-- Register Button -->
+      <div style="margin-top: 10px;">
+        <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
+          Register
+        </a>
+      </div>
+
     </div>
 
-    <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
-      <strong>Time:</strong> 11:00 AM to 5 PM
+    <!-- RIGHT: LOGO -->
+    <div style="flex:0 0 auto; text-align:center;">
+      <img src="/images/ieee_ai_logo.png" alt="IEEE AI Logo"
+           style="max-width:140px; height:auto;">
     </div>
 
-    <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
-      <strong>Location:</strong> Great Hall Meeting Room 3, Ohio Union, The Ohio State University  
-      <br>1739 N High St, Columbus, OH 43210
-    </div>
-  </div>
-
-  <!-- Register Button -->
-  <div style="margin-top: 10px;">
-    <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
-      Register
-    </a>
   </div>
 
   <!-- Button Styling -->
