@@ -160,13 +160,16 @@ show_title: false
         <div style="flex: 1; min-width: 240px;">
           <h3 style="margin: 0 0 4px 0;">Balavignesh Vemparala</h3>
           <p style="margin: 0 0 8px 0;"><strong>Title/Affiliation:</strong> Senior R&amp;D Engineer, Synopsys (formerly Ansys)</p>
-          <p style="margin: 0;"><strong>Talk Title:</strong> TBD</p>
+          <p style="margin: 0;"><strong>Talk Title:</strong> From LLMs to Agentic AI: Building Reliable Systems with RAG and MCP</p>
         </div>
       </div>
 
       <div class="gsb-speaker-content" style="margin-top: 14px;">
         <h4 style="margin: 0 0 6px 0;">Abstract</h4>
-        <p style="margin: 0 0 12px 0;">[Will be posted soon]</p>
+        <p style="margin: 0 0 12px 0;">
+        Large Language Models (LLMs) are powerful, but the most useful applications come from the systems built around them. This talk explains the modern LLM stack that turns a model into something dependable and action-capable: Retrieval-Augmented Generation (RAG) to ground outputs in trusted information, and Agentic AI to plan and execute multi-step workflows with tools and verification. We’ll break down practical RAG design choices (chunking, retrieval, reranking, and evaluation), then walk through agent patterns used in industry—tool-using assistants, planner–executor setups, manager–worker teams, and evaluator/guardrail agents. Finally, we’ll introduce MCP (Model Context Protocol) as a structured way to connect models to tools and data sources, reducing one-off integrations and making agent systems easier to scale. Attendees will leave with clear mental models, real design patterns, and a roadmap for building portfolio-ready LLM applications.
+        
+        </p>
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
         <p style="margin: 0;">
@@ -266,7 +269,7 @@ show_title: false
           alt="Nitin photo"
           style="width: 110px; height: 110px; object-fit: cover; border-radius: 14px; border: 1px solid rgba(0,0,0,0.10);">
         <div style="flex: 1; min-width: 240px;">
-          <h3 style="margin: 0 0 4px 0;">Nitin</h3>
+          <h3 style="margin: 0 0 4px 0;">Nitin Appiah</h3>
           <p style="margin: 0 0 8px 0;"><strong>Title/Affiliation:</strong> TBD</p>
           <p style="margin: 0;"><strong>Talk Title:</strong> TBD</p>
         </div>
@@ -274,10 +277,16 @@ show_title: false
 
       <div class="gsb-speaker-content" style="margin-top: 14px;">
         <h4 style="margin: 0 0 6px 0;">Abstract</h4>
-        <p style="margin: 0 0 12px 0;">[Will be posted soon]</p>
+        <p style="margin: 0 0 12px 0;"> 
+        Manufacturing industries are rapidly adopting AI and transforming into more technology-focused organizations. This talk presents a set of applied AI initiatives at Hexion, including time-series forecasting for demand planning using macroeconomic signals, machine learning–driven product formulation to tailor chemical characteristics, and the use of streaming manufacturing sensor data to create digital twins. The session also explores large language models and context-aware prompt engineering to automate reporting and improve insight generation from complex enterprise data. Attendees will gain practical perspectives on translating academic AI concepts into scalable, production-ready solutions within a real-world chemical manufacturing environment.
+        </p>
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
-        <p style="margin: 0;">[Will be posted soon]</p>
+        <p style="margin: 0;">
+        Nitin Appiah is a Data Analyst in the enterprise data analytics team at Hexion Inc., where he applies machine learning, forecasting, and generative AI techniques to large-scale industrial and business systems. His work includes LLM-driven analytics automation, predictive modeling, and the development of production-grade data pipelines and BI systems. He holds a Master’s degree in Computer Science from The Ohio State University, USA (2023), and a Bachelor’s degree in Computer Science from Anna University, India (2021), with formal training in machine learning, neural networks, and parallel computing. Previously, he interned at Synopsys in California and Vue.ai in India. He also served as a Graduate Research Assistant in Ning Lab at The Ohio State University, conducting healthcare AI research to improve treatment for patients with traumatic brain injury and Alzheimer’s disease. He has additionally contributed to research on federated learning, multilingual language models, and computer vision.
+        
+        
+        </p>
       </div>
     </article>
 
