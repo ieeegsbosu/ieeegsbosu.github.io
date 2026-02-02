@@ -50,10 +50,10 @@ show_title: false
 
 <!-- EVENT INFO SECTION -->
 <section class="gsb-section gsb-aiday-info" style="max-width: 1100px; margin: 0 auto; padding: 24px 16px;">
-  <h2 class="gsb-section-title" style="margin: 0 0 8px 0;">IEEE OSU AI Symposium 2026</h2>
+  <h2 class="gsb-section-title" style="margin: 0 0 8px 0;">IEEE OSU AI Day 2026</h2>
 
  <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
-  We are organizing the <strong>IEEE OSU AI Symposium</strong> on <strong>February 12, 2026</strong>, hosted by the
+  We are organizing the <strong>IEEE OSU AI Day</strong> on <strong>February 12, 2026</strong>, hosted by the
   <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
   Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
   <br><br>
