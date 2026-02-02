@@ -375,6 +375,21 @@ show_title: false
   <div class="gsb-committee-grid"
        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; align-items: start;">
 
+    <!-- Paul Berger -->
+   <div style="text-align:center;">
+      <img src="/images/Paul_Berger_sml.jpg" alt="Prof. Paul Berger"
+          style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
+
+      <div style="margin-top: 8px; font-weight: 600; font-size: 15px;">
+        Prof. Paul Berger
+      </div>
+
+      <div style="font-size: 13px; color: #666; margin-top: 2px;">
+        Faculty Advisor
+      </div>
+    </div>
+
+
     <!-- Srinivasan -->
     <div style="text-align:center;">
       <img src="/images/srinivasan.jpg" alt="Srinivasan Subramaniyan"
