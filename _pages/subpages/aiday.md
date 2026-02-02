@@ -50,74 +50,80 @@ show_title: false
 
 <!-- EVENT INFO SECTION -->
 <section class="gsb-section gsb-aiday-info" style="max-width: 1100px; margin: 0 auto; padding: 24px 16px;">
-  <h2 class="gsb-section-title" style="margin: 0 0 8px 0;">IEEE OSU AI Day 2026</h2>
 
- <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
-  We are organizing the <strong>IEEE OSU AI Day</strong> on <strong>February 12, 2026</strong>, hosted by the
-  <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
-  Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
-  <br><br>
-  🍽️ <strong>Free lunch and refreshments will be provided.</strong>
-</p>
+  <!-- Title + Logo -->
+  <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px; flex-wrap:wrap;">
+    <img src="/images/ieee_ai_logo.png" alt="IEEE AI Logo"
+         style="height:48px; width:auto; object-fit:contain;">
+    <h2 class="gsb-section-title" style="margin:0;">IEEE OSU AI Day 2026</h2>
+  </div>
 
+  <p class="gsb-hero-text" style="margin: 0 0 14px 0;">
+    We are organizing the <strong>IEEE OSU AI Day</strong> on <strong>February 12, 2026</strong>, hosted by the
+    <strong>IEEE Graduate Student Body (GSB)</strong> and the <strong>IEEE Undergraduate Chapter</strong>.
+    Join us for talks and discussions featuring invited speakers across AI research and real-world applications.
+    <br><br>
+    🍽️ <strong>Free lunch and refreshments will be provided.</strong>
+  </p>
+
+  <!-- Meta Pills -->
   <div class="gsb-aiday-meta" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 18px 0;">
     <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
       <strong>Date:</strong> Feb 12, 2026
     </div>
+
     <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
       <strong>Time:</strong> 11:00 AM to 5 PM
     </div>
+
     <div class="gsb-pill" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 999px; padding: 6px 12px;">
-  <strong>Location:</strong> Great Hall Meeting Room 3, Ohio Union, The Ohio State University  
-  <br>1739 N High St, Columbus, OH 43210
+      <strong>Location:</strong> Great Hall Meeting Room 3, Ohio Union, The Ohio State University  
+      <br>1739 N High St, Columbus, OH 43210
+    </div>
   </div>
 
-  <!-- <div style="margin-top: 10px;">
-    <a href="https://forms.office.com/r/gS66VBsnBr" class="gsb-button"
-       style="display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; border:1px solid rgba(0,0,0,0.12);">
+  <!-- Register Button -->
+  <div style="margin-top: 10px;">
+    <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
       Register
     </a>
-  </div> -->
+  </div>
 
-  <div style="margin-top: 10px;">
-  <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
-    Register
-  </a>
-</div>
+  <!-- Button Styling -->
+  <style>
+  .buckeye-btn,
+  .buckeye-btn:link,
+  .buckeye-btn:visited,
+  .buckeye-btn:hover,
+  .buckeye-btn:active {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff !important;
+    background: linear-gradient(145deg, #bb0000, #8b0000);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25),
+                inset 0 2px 4px rgba(255,255,255,0.2);
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
 
-<style>
-.buckeye-btn,
-.buckeye-btn:link,
-.buckeye-btn:visited,
-.buckeye-btn:hover,
-.buckeye-btn:active {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 18px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-family: system-ui, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff !important;   /* override blue link color */
-  background: linear-gradient(145deg, #bb0000, #8b0000);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25),
-              inset 0 2px 4px rgba(255,255,255,0.2);
-  transition: all 0.25s ease;
-  white-space: nowrap;
-}
+  .buckeye-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3),
+                inset 0 2px 6px rgba(255,255,255,0.25);
+  }
 
-.buckeye-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3),
-              inset 0 2px 6px rgba(255,255,255,0.25);
-}
+  .buckeye-btn:active {
+    transform: scale(0.97);
+  }
+  </style>
 
-.buckeye-btn:active {
-  transform: scale(0.97);
-}
-</style>
 </section>
 
 
