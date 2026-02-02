@@ -86,7 +86,11 @@ show_title: false
 </div>
 
 <style>
-.buckeye-btn {
+.buckeye-btn,
+.buckeye-btn:link,
+.buckeye-btn:visited,
+.buckeye-btn:hover,
+.buckeye-btn:active {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -96,17 +100,12 @@ show_title: false
   font-family: system-ui, sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;                 /* force white */
+  color: #ffffff !important;   /* override blue link color */
   background: linear-gradient(145deg, #bb0000, #8b0000);
   box-shadow: 0 6px 14px rgba(0,0,0,0.25),
               inset 0 2px 4px rgba(255,255,255,0.2);
   transition: all 0.25s ease;
   white-space: nowrap;
-}
-
-/* Ensure child elements inherit white */
-.buckeye-btn * {
-  color: inherit;
 }
 
 .buckeye-btn:hover {
@@ -119,7 +118,6 @@ show_title: false
   transform: scale(0.97);
 }
 </style>
-
 </section>
 
 
