@@ -81,7 +81,7 @@ show_title: false
 
   <div style="margin-top: 10px;">
     <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
-      <span class="icon">B</span>
+      <span class="icon">Register</span>
     </a>
   </div>
 
