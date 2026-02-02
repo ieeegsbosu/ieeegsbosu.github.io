@@ -91,7 +91,7 @@ show_title: false
     </div>
     <!-- RIGHT: LOGO -->
     <div style="flex:0 0 auto; text-align:center;">
-      <img src="/images/aiday/logo_event.png" alt="IEEE AI Logo"
+      <img src="/images/aiday/logo_event.png" alt=""
            style="max-width:140px; height:auto;">
     </div>
   </div>
