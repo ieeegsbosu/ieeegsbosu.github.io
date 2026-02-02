@@ -90,18 +90,23 @@ show_title: false
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 18px;        /* gives space around text */
-  border-radius: 12px;       /* rounded square */
+  padding: 10px 18px;
+  border-radius: 12px;
   text-decoration: none;
   font-family: system-ui, sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: white;
+  color: #ffffff;                 /* force white */
   background: linear-gradient(145deg, #bb0000, #8b0000);
   box-shadow: 0 6px 14px rgba(0,0,0,0.25),
               inset 0 2px 4px rgba(255,255,255,0.2);
   transition: all 0.25s ease;
-  white-space: nowrap;       /* prevents wrapping */
+  white-space: nowrap;
+}
+
+/* Ensure child elements inherit white */
+.buckeye-btn * {
+  color: inherit;
 }
 
 .buckeye-btn:hover {
