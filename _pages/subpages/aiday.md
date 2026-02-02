@@ -80,45 +80,40 @@ show_title: false
   </div> -->
 
   <div style="margin-top: 10px;">
-    <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
-      <span class="icon">Register</span>
-    </a>
-  </div>
+  <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
+    Register
+  </a>
+</div>
 
-  <style>
-  .buckeye-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 54px;
-    height: 54px;
-    border-radius: 12px; /* square with rounded corners */
-    text-decoration: none;
-    background: linear-gradient(145deg, #bb0000, #8b0000);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.25),
-                inset 0 2px 4px rgba(255,255,255,0.2);
-    transition: all 0.25s ease;
-  }
+<style>
+.buckeye-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;        /* gives space around text */
+  border-radius: 12px;       /* rounded square */
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(145deg, #bb0000, #8b0000);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25),
+              inset 0 2px 4px rgba(255,255,255,0.2);
+  transition: all 0.25s ease;
+  white-space: nowrap;       /* prevents wrapping */
+}
 
-  .buckeye-btn .icon {
-    font-family: system-ui, sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  }
+.buckeye-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3),
+              inset 0 2px 6px rgba(255,255,255,0.25);
+}
 
-  .buckeye-btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3),
-                inset 0 2px 6px rgba(255,255,255,0.25);
-  }
-
-  .buckeye-btn:active {
-    transform: scale(0.97);
-  }
-  </style>
-
+.buckeye-btn:active {
+  transform: scale(0.97);
+}
+</style>
 
 </section>
 
