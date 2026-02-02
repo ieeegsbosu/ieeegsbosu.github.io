@@ -92,7 +92,7 @@ show_title: false
     justify-content: center;
     width: 54px;
     height: 54px;
-    border-radius: 50%;
+    border-radius: 12px; /* square with rounded corners */
     text-decoration: none;
     background: linear-gradient(145deg, #bb0000, #8b0000);
     box-shadow: 0 6px 14px rgba(0,0,0,0.25),
@@ -379,16 +379,13 @@ show_title: false
    <div style="text-align:center;">
       <img src="/images/Paul_Berger_sml.jpg" alt="Prof. Paul Berger"
           style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-
       <div style="margin-top: 8px; font-weight: 600; font-size: 15px;">
         Prof. Paul Berger
       </div>
-
       <div style="font-size: 13px; color: #666; margin-top: 2px;">
         Faculty Advisor
       </div>
     </div>
-
 
     <!-- Srinivasan -->
     <div style="text-align:center;">
