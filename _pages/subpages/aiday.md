@@ -72,13 +72,54 @@ show_title: false
   <br>1739 N High St, Columbus, OH 43210
   </div>
 
-  <!-- Registration button (replace href with your real link) -->
-  <div style="margin-top: 10px;">
+  <!-- <div style="margin-top: 10px;">
     <a href="https://forms.office.com/r/gS66VBsnBr" class="gsb-button"
        style="display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; border:1px solid rgba(0,0,0,0.12);">
       Register
     </a>
+  </div> -->
+
+  <div style="margin-top: 10px;">
+    <a href="https://forms.office.com/r/gS66VBsnBr" class="buckeye-btn">
+      <span class="icon">B</span>
+    </a>
   </div>
+
+  <style>
+  .buckeye-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    text-decoration: none;
+    background: linear-gradient(145deg, #bb0000, #8b0000);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25),
+                inset 0 2px 4px rgba(255,255,255,0.2);
+    transition: all 0.25s ease;
+  }
+
+  .buckeye-btn .icon {
+    font-family: system-ui, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .buckeye-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3),
+                inset 0 2px 6px rgba(255,255,255,0.25);
+  }
+
+  .buckeye-btn:active {
+    transform: scale(0.97);
+  }
+  </style>
+
+
 </section>
 
 
