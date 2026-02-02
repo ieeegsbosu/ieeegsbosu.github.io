@@ -63,7 +63,7 @@ show_title: false
   1) 🍩 <strong>Coffee with Donuts</strong> — February 5<br>
   2) 🤖 <strong>
      <a href="{{ site.baseurl }}/subpages/aiday/" style="color: blue; text-decoration: underline;">
-       IEEE OSU AI Symposium 2026
+       IEEE OSU AI Day 2026
      </a>
      </strong> — February 12
 </p>
