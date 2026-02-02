@@ -265,7 +265,7 @@ show_title: false
     <article class="gsb-speaker-card" style="border: 1px solid rgba(0,0,0,0.12); border-radius: 16px; padding: 16px;">
       <div class="gsb-speaker-header" style="display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start;">
         <img
-          src="/images/aiday/nithin.jpg"
+          src="/images/aiday/nitin.jpg"
           alt="Nitin photo"
           style="width: 110px; height: 110px; object-fit: cover; border-radius: 14px; border: 1px solid rgba(0,0,0,0.10);">
         <div style="flex: 1; min-width: 240px;">
