@@ -88,15 +88,12 @@ show_title: false
           Register
         </a>
       </div>
-
     </div>
-
     <!-- RIGHT: LOGO -->
     <div style="flex:0 0 auto; text-align:center;">
       <img src="/images/aiday/logo_event.png" alt="IEEE AI Logo"
            style="max-width:140px; height:auto;">
     </div>
-
   </div>
 
   <!-- Button Styling -->
