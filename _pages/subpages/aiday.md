@@ -269,11 +269,7 @@ show_title: false
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
         <p style="margin: 0;">
-          Dinesh Kumar Garg is an industry researcher and IT, supply-chain, and advanced manufacturing technology
-          leader focused on applying artificial intelligence to enterprise resource planning and execution challenges.
-          He is a Senior IT Manager at Honeywell Intelligrated, leading ERP, advanced planning, and digital manufacturing
-          initiatives. He is a Senior Member of IEEE and a contributor to CIO.com. His background includes work across
-          national labs and large-scale industrial systems delivery.
+      Dinesh Kumar Garg is an industry researcher and IT, supply-chain, and advanced manufacturing technology leader focused on applying artificial intelligence to enterprise resource planning and execution challenges. He is a Senior IT Manager at Honeywell Intelligrated, where he leads ERP, advanced planning, and digital manufacturing initiatives supporting complex industrial operations. His work centers on AI-driven inventory optimization, supply-chain planning, and real-time, data-driven production decision-making. He is a Senior Member of IEEE and an author and contributor to CIO.com. Garg’s background spans applied research and large-scale industrial system delivery across multiple industries. Earlier in his career, he was associated with the Central Scientific Instruments Organization (CSIO), a national laboratory under India’s Council of Scientific and Industrial Research (CSIR). He later contributed to enterprise ERP and manufacturing initiatives for General Electric (GE) through Birlasoft and supported advanced manufacturing and supply-chain planning initiatives at ADVICS North America, a Toyota–AISIN company. His work has resulted in multiple U.S. and UK patent filings related to AI-enabled inventory and supply-chain optimization.
         </p>
       </div>
     </article>
@@ -322,8 +318,8 @@ show_title: false
           style="width: 110px; height: 110px; object-fit: cover; border-radius: 14px; border: 1px solid rgba(0,0,0,0.10);">
         <div style="flex: 1; min-width: 240px;">
           <h3 style="margin: 0 0 4px 0;">Nitin Appiah</h3>
-          <p style="margin: 0 0 8px 0;"><strong>Title/Affiliation:</strong> TBD</p>
-          <p style="margin: 0;"><strong>Talk Title:</strong> TBD</p>
+          <p style="margin: 0 0 8px 0;"><strong>Title/Affiliation:</strong> Data Analyst Hexion</p>
+          <p style="margin: 0;"><strong>Talk Title:</strong> Applied Artificial Intelligence in Chemical Manufacturing</p>
         </div>
       </div>
 
@@ -352,13 +348,13 @@ show_title: false
         <div style="flex: 1; min-width: 240px;">
           <h3 style="margin: 0 0 4px 0;">D. Adithya Sriram</h3>
           <p style="margin: 0 0 8px 0;"><strong>Title/Affiliation:</strong> Engineer, Demand Side Operations, Dominion Energy</p>
-          <p style="margin: 0;"><strong>Talk Title:</strong> TBD</p>
+          <p style="margin: 0;"><strong> Talk Title :</strong> ML and probabilistic modeling techniques for Power Systems</p>
         </div>
       </div>
 
       <div class="gsb-speaker-content" style="margin-top: 14px;">
         <h4 style="margin: 0 0 6px 0;">Abstract</h4>
-        <p style="margin: 0 0 12px 0;">[Will be posted soon]</p>
+        <p style="margin: 0 0 12px 0;">Rapid load growth across the utility industry has intensified the need for accurate short and long term forecasting methods that can predict future capacity and system planning requirements. This talk presents an exploration of how ML and probabilistic modeling techniques can be integrated into time series forecasting workflows to enhance capacity planning and support flexible load programs within modern power systems. This session will highlight how future transmission reliability can be inferred from current system operating conditions through models capable of forecasting N-1 security constraints. Additionally it will also touch upon how AI agents are being used to autonomously respond to response tasks where many questions regarding utility programs recur annually across different stakeholders. </p>
 
         <h4 style="margin: 0 0 6px 0;">Bio</h4>
         <p style="margin: 0;">
@@ -405,12 +401,28 @@ show_title: false
       <div style="margin-top: 8px; font-weight: 600;">Srinivasan Subramaniyan</div>
     </div>
 
+    
     <!-- Ashutosh -->
     <div style="text-align:center;">
       <img src="/images/soni.jpg" alt="Ashutosh Soni"
            style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
       <div style="margin-top: 8px; font-weight: 600;">Ashutosh Soni</div>
     </div>
+
+     <!-- Julio -->
+    <div style="text-align:center;">
+      <img src="/images/julio.png" alt="Julio Rodriguez"
+           style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
+      <div style="margin-top: 8px; font-weight: 600;">Julio Rodriguez</div>
+    </div>
+
+       <!-- Siddhi -->
+    <div style="text-align:center;">
+      <img src="/images/siddhi.jpg" alt="Siddhi Nasare"
+           style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
+      <div style="margin-top: 8px; font-weight: 600;">Siddhi Nasare</div>
+    </div>
+
 
     <!-- Nicholas -->
     <div style="text-align:center;">
@@ -419,12 +431,6 @@ show_title: false
       <div style="margin-top: 8px; font-weight: 600;">Nicholas DiDonato</div>
     </div>
 
-    <!-- Julio -->
-    <div style="text-align:center;">
-      <img src="/images/julio.png" alt="Julio Rodriguez"
-           style="width: 92px; height: 92px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12);">
-      <div style="margin-top: 8px; font-weight: 600;">Julio Rodriguez</div>
-    </div>
 
     <!-- Srivatch -->
     <div style="text-align:center;">
